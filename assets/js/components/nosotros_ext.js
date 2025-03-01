@@ -45,8 +45,7 @@ class cardNosotrosEXT extends HTMLElement {
         document.addEventListener("click", (event) => {
             const btn_ = event.target.closest(".btn-ver-mas-ext");
             if (btn_) {
-                const id = parseInt(btn_.dataset.id, 10);
-                console.log("ID recibido:", id);
+                const id = parseInt(btn_.dataset.id, 10); 
                 this.toggleSidebarExt(id);
             }
 
@@ -68,7 +67,6 @@ class cardNosotrosEXT extends HTMLElement {
         } else {
             if (id !== null) {
                 const person = this.nosotros_ext.find(p => parseInt(p.id, 10) === id);
-                console.log("Persona encontrada:", person); 
 
                 if (person) {
                     document.getElementById("modal-image-ext").src = person.image;
