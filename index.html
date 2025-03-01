@@ -1,11 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urbanisk</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://kit.fontawesome.com/b229e29af4.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
 </head>
+
 <body>
-    HOLA
+    <header id="header-scroll">
+        <img data-logo width="78" src="./assets/image/logo_urbanisk_blanco.webp">
+        <nav class="urb_nav">
+            <ul class="urb_nav-list" data-menu>
+                <li class="urb_nav-listItem"><a class="item_menu" data="item1" href="#inicio">Inicio</a></li>
+                <li class="urb_nav-listItem"><a class="item_menu" data="item2" href="#nosotros">Nosotros</a></li>
+                <li class="urb_nav-listItem"><a class="item_menu" data="item3" href="#servicios">Servicios</a></li>
+                <li class="urb_nav-listItem"><a class="item_menu" data="item4" href="#productos">Productos</a></li>
+                <li class="urb_nav-listItem"><a class="item_menu" data="item5" href="#equipo">Equipo</a></li>
+                <li class="urb_nav-listItem"><a class="item_menu" data="item6" href="#experiencia">Experiencia</a></li>
+                <li class="urb_nav-listItem"><a class="item_menu" data="item7" href="#alianzas">Alianzas estratégicas</a></li>
+                <li class="urb_nav-listItem-contacto"><a class="item_menu" data="item8" href="#contacto" class="nav-btn">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Inicio -->
+        <section id="inicio" class="urb_home center">
+            <div class="urb_home_content">
+                <h1>Transformamos el territorio para construir ciudades sostenibles</h1>
+                <p>Soluciones innovadoras en planificación territorial, diseño arquitectónico y urbano, medio ambiente y
+                    gestión de proyectos para un desarrollo eficiente y sostenible.</p>
+                <a href="#contacto" class="btn-primary m-auto no-select">Hablemos de tu proyecto <i
+                        class="fa-solid fa-chevron-down"></i></a>
+            </div>
+            <div class="urb_home_slider no-select">
+                <img src="./assets/image/image_1.png" alt="Planificación Territorial y Gestión del Suelo">
+                <img src="./assets/image/image_2.png" alt="Arquitectura y Urbanismo">
+                <img src="./assets/image/image_3.png" alt="Gestión de Proyectos">
+                <img src="./assets/image/image_4.png" alt="Formación y certificación profesional">
+            </div>
+            <div class="overlay_slider"></div>
+        </section>
+        <!-- Quienes somos -->
+        <section id="nosotros" class="urb_qs center">
+            <div class="urb_qs-img no-select"></div>
+            <div class="urb_qs-content">
+                <div class="urb_box-title">
+                    <b class="urb_subtitle">Sobre Nosotros</b>
+                    <h1 class="urb_title">¿Quiénes somos?</h1>
+                </div>
+                <p class="urb_p">Desde 2008, nos hemos consolidado como una empresa líder en consultoría y gestión de
+                    proyectos,
+                    brindando soluciones integrales y personalizadas en planificación territorial, gestión urbana y
+                    ambiental, diseño arquitectónico e ingeniería, así como en el desarrollo de políticas públicas y
+                    normativas. Nuestra amplia experiencia en el sector público y privado nos permite abordar cada
+                    proyecto con un enfoque estratégico, garantizando eficiencia, innovación y cumplimiento normativo en
+                    cada solución que ofrecemos.</p>
+            </div>
+        </section>
+        <!-- Servicios -->
+        <section id="servicios" class="p-section urb_serv bg-section">
+            <div class="urb_serv-title txt-center">
+                <b class="urb_subtitle">Nuestros Servicios</b>
+                <h1 class="urb_title">Soluciones a tu medida</h1>
+            </div>
+            <card-servicios class="urb_serv-content"></card-servicios>
+        </section>
+        <!-- Productos -->
+        <section id="productos" class="p-section">
+            <div class="urb_box-title">
+                <b class="urb_subtitle">Nuestros Productos</b>
+                <h1 class="urb_title">Impulsamos soluciones tecnológicas y control remoto con el respaldo de softwares
+                    líderes
+                </h1>
+            </div>
+            <card-productos class="urb_box-prod"></card-productos>
+        </section>
+        <!-- Nuestro Equipo -->
+        <section id="equipo" class="section_nst">
+            <div class="urb_box-title urb_nst_title">
+                <b class="urb_subtitle">Nuestro Equipo</b>
+                <h1 class="urb_title">Más que consultores, somos aliados estratégicos en cada proyecto</h1>
+                <p>La experiencia y especialización de nuestro equipo nos permite abordar cada proyecto con una
+                    visión integral, ofreciendo soluciones innovadoras en el diseño arquitectónico, planificación
+                    territorial y la gestión urbana y ambiental.
+                </p>
+            </div>
+            <div class="nst_card">
+                <card-nosotros-ep class="nst_card-content center"></card-nosotros-ep>
+                <card-nosotros-ext class="nst_card-content"></card-nosotros-ext>
+                <div id="modal"></div>
+            </div>
+        </section>
+        <!-- Experiencia -->
+        <section id="experiencia" class="p-section bg-section">
+            <div class="txt-center">
+                <b class="urb_subtitle">Experiencia</b>
+                <h1 class="urb_title">Experiencia y calidad en cada proyecto</h1>
+            </div>
+            <div class="urb_proj-content">
+                <div class="exp-navTab-proj center" id="projNavTab">
+                    <a href="#" class="active" data-tab="planificacion-territorial">Planificación Territorial</a>
+                    <a href="#" data-tab="arquitectura-urbanismo">Arquitectura y Urbanismo</a>
+                    <a href="#" data-tab="gestion-proyectos">Gestión de Proyectos</a>
+                    <a href="#" data-tab="formacion">Formación</a>
+                </div>
+                <list-proyectos class="tab-proj-content" id="projContent"></list-proyectos>
+            </div>
+        </section>
+        <!-- Alianzas -->
+        <section id="alianzas" class="urb_ali p-section">
+            <span class="urb_ali-svgTop"></span>
+            <div class="txt-center">
+                <b class="urb_subtitle">Alianzas Estratégicas</b>
+                <h1 class="urb_title">Creciendo juntos para llegar más lejos</h1>
+            </div>
+            <div class="urb_ali-images no-select">
+                <img src="./assets/image/logo_1.png">
+                <img src="./assets/image/logo_2.png">
+                <img src="./assets/image/logo_3.png">
+                <img src="./assets/image/logo_4.png">
+                <img src="./assets/image/logo_5.png">
+            </div>
+            <span class="urb_ali-svgBottom"></span>
+        </section>
+        <!-- Contacto -->
+        <section id="contacto" class="urb_cont center">
+            <div class="overlay-contact"></div>
+            <div class="urb_cont-box">
+                <div class="urb_cont-1">
+                    <img width="150" src="./assets/image/logo_urbanisk.webp" alt="">
+                    <div class="urb_cont-detalle">
+                        <h3>Contáctanos</h3>
+                        <P>Puedes escribirnos a través de nuestros canales o seguirnos en redes sociales.</P>
+                        <a><i class="fa-solid fa-phone"></i>098 887 2797</a>
+                        <a href="https://wa.me/56963380098" target="_blank"><i class="fa-brands fa-whatsapp"></i>096 338 0098 </a>
+                        <a href="mailto:proyectos@urbansitikconsultores.com"><i class="fa-solid fa-envelope"></i>proyectos@urbansitikconsultores.com</a>
+                    </div>
+                </div>
+                <div class="urb_cont-2">
+                    <div class="of-box">
+                        <h3>Oficinas</h3>
+                        <a>
+                            Francisco de Marcos 330 Y Chimborazo.
+                            2do. Piso 2B.
+                            <br><b>Guayaquil</b>
+                        </a>
+                        <a>
+                            Urbanización Sambocity Etapa Hollywood Park Mz. 5 V1
+                            <br><b>Daule – La Aurora</b>
+                        </a>
+    
+                    </div>
+                    <div class="urb_cont-detalle">
+                        <h3>Síguenos</h3>
+                        <a href="https://www.instagram.com/urbanistik_consultores?igsh=MTEweWx5N29qMmN3MA==" target="_blank"><i class="fa-brands fa-instagram"></i>@urbanistik_consultores</a>
+                        <a href="https://www.linkedin.com/company/urbanistik-consultores/" target="_blank"><i class="fa-brands fa-linkedin"></i>@urbanistik-consultores</a>
+                    </div>
+                </div>
+                <div class="urb_cont-3">
+                    <h3>Conversemos sobre tu proyecto.</h3>
+                    <P>Déjanos tus datos y te contactaremos pronto para analizar tus necesidades y desarrollar proyectos
+                        juntos.</P>
+                    <form action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+                            </div>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos sobre tu proyecto, tus ideas o necesidades"></textarea>
+                        </div>
+                        <small>Al enviar el formulario asumimos su conformidad con nuestro aviso legal y nuestra política de privacidad. </small>
+                        
+                        <button type="submit" class="btn-primary m-auto no-select">Enviar</button> 
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="urb_copy">
+            © 2025 Creado por  Lenny Loor
+        </section>
+    </main>
+    <!-- script -->
+    <script type="module" src="/assets/js/components/components.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js'></script>
 </body>
+
 </html>
