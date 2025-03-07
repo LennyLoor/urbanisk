@@ -4,7 +4,7 @@ export var dataJSON = `{
             "id": "1",  
             "equipo": "Equipo Principal",
             "tag": "ep",
-            "image": "./assets/image/photo_1.png",
+            "image": "./assets/image/nst_1.webp",
             "name": "ALDO RÍOS MORANTE",
             "cargo": "Gerente General de Urbanistik S.A.",
             "detalle": "Arquitecto – Máster en Administración de Empresas",
@@ -16,7 +16,7 @@ export var dataJSON = `{
             "id": "2", 
             "equipo": "Equipo Principal",
             "tag": "ep",
-            "image": "./assets/image/photo_2.png",
+            "image": "./assets/image/nst_2.webp",
             "name": "JOSÉ NEIRA RIZZO",
             "cargo": "Asesor Legal y Urbanístico",
             "detalle": "Arquitecto – Máster of Science in Community and Regional Planning",
@@ -28,7 +28,7 @@ export var dataJSON = `{
             "id": "3", 
             "equipo": "Externo",
             "tag": "ext",
-            "image": "./assets/image/photo_3.png",
+            "image": "./assets/image/nst_3.webp",
             "name": "KARLA PAEZ CHAVEZ",
             "cargo": "Arquitecta",
             "detalle": "Magíster en Impactos Ambientales", 
@@ -38,7 +38,7 @@ export var dataJSON = `{
             "id": "4", 
             "equipo": "Externo",
             "tag": "ext",
-            "image": "./assets/image/photo_4.png",
+            "image": "./assets/image/nst_4.webp",
             "name": "ALVARO VALLADARES CARRILLO",
             "cargo": "Arquitecto",
             "detalle": "Magíster en Ordenamiento Territorial",
@@ -49,7 +49,7 @@ export var dataJSON = `{
             "id": "5", 
             "equipo": "Externo",
             "tag": "ext",
-            "image": "./assets/image/photo_5.png",
+            "image": "./assets/image/nst_5.webp",
             "name": "ISABEL ARMIJOS CARVAJAL",
             "cargo": "Licenciada en Ciencias de la Educación, especialidad Comercio y Administración",
             "detalle": "Magíster en Gestión de Proyectos Socio Productivos",
@@ -60,7 +60,7 @@ export var dataJSON = `{
             "id": "6", 
             "equipo": "Externo",
             "tag": "ext",
-            "image": "./assets/image/photo_6.png",
+            "image": "./assets/image/nst_6.webp",
             "name": "ENRIQUE CAMPOS MENA",
             "cargo": "Contador Público Autorizado",
             "detalle": "MBA con mención en Sostenibilidad de Sectores",
@@ -71,7 +71,7 @@ export var dataJSON = `{
             "id": "7", 
             "equipo": "Externo",
             "tag": "ext",
-            "image": "./assets/image/photo_7.png",
+            "image": "./assets/image/nst_7.webp",
             "name": "DANIEL TOBALINA DITO",
             "cargo": "Ingeniero Ambiental",
             "detalle": "Magíster en Tecnologías de la Información Geográfica: SIG y Teledetección",
@@ -82,7 +82,7 @@ export var dataJSON = `{
             "id": "8", 
             "equipo": "Externo",
             "tag": "ext",
-            "image": "./assets/image/photo_8.png",
+            "image": "./assets/image/nst_8.webp",
             "name": "Diana Mindiola Robayo",
             "cargo": "Ingeniera Civil",
             "detalle": "Especialista Hidrosanitaria",
@@ -94,7 +94,7 @@ export var dataJSON = `{
         {
             "id": "1",  
             "bg": "white",
-            "image": "./assets/image/planificacion-territorial.png",
+            "image": "./assets/image/planificacion-territorial.webp",
             "title": "Planificación Territorial y Gestión del Suelo",
             "detalle": "Ofrecemos soluciones integrales para promover el desarrollo sostenible y equitativo delos territorios, mediante la elaboración de planes de ordenamiento territorial, estrategias para la gestión eficiente del suelo y la conservación ambiental, además de asesoría en planificación estratégica y políticas públicas.",
             "beneficios": "<ul class='card_back-list'><li>Elaboración de Planes de Desarrollo y Ordenamiento Territorial (PDOT) y Planes de Uso y Gestión del Suelo (PUGS).</li><li>Desarrollo de planes maestros, planes parciales y planes de implantación urbanística.</li><li>Evaluación y análisis de instrumentos de planificación territorial.</li><li>Asesoría en procesos de legalización de asentamientos humanos.</li><li>Elaboración y revisión de normativas de regulación urbanística y control de construcción.</li><li>Gestión de suelo para proyectos de desarrollo urbano.</li><li>Modelos de crecimiento urbano y prospectiva territorial.</li><li>Georreferenciación y análisis espacial con SIG (Sistemas de Información Geográfica).</li><li>Participación ciudadana en procesos de planificación.</li></ul>"
@@ -103,7 +103,7 @@ export var dataJSON = `{
         {
             "id": "2",  
             "bg": "transparent",
-            "image": "./assets/image/Arquitectura.png",
+            "image": "./assets/image/Arquitectura.webp",
             "title": "Arquitectura y Urbanismo",
             "detalle": "Desarrollamos proyectos arquitectónicos, estudios de ingeniería, diseño urbanístico y planes de renovación urbana. Implementamos tecnología avanzada como Building Information Modeling (BIM) para optimizar procesos en la industria de la construcción y la ingeniería. Además, brindamos servicios de tasación y avalúos inmobiliarios, garantizando un análisis preciso y confiable.",
             "beneficios": "<ul class='card_back-list'><li>Implementación de Metodología BIM (Building Information Modeling).</li><li>Integración de BIM con GIS (Sistemas de Información Geográfica).</li><li>Diseño y Desarrollo de Planes Maestros Urbanos.</li><li>Diseño de Espacios Públicos y Equipamientos Urbanos.</li><li>Proyectos de Desarrollo Inmobiliario.</li><li>Diseño Arquitectónico y Estudios de Ingenierías.</li><li>Supervisión e Inspección Técnica de Obras.</li><li>Visualización Arquitectónica 3D y Renderización.</li><li>Servicios de Topografía y Georreferenciación con Tecnología Avanzada.</li></ul>"
@@ -111,7 +111,7 @@ export var dataJSON = `{
         {
             "id": "3",  
             "bg": "transparent",
-            "image": "./assets/image/Gestion-de-proyectos.png",
+            "image": "./assets/image/Gestion-de-proyectos.webp",
             "title": "Gestión de Proyectos",
             "detalle": "Brindamos servicios especializados en la administración de proyectos públicos, privados y de Asociaciones Público-Privadas (APP), abarcando diversas áreas como proyectos productivos, de construcción, inmobiliarios, comunitarios, así como supervisión y fiscalización de obras civiles. Nuestro enfoque garantiza una gestión eficiente en cada etapa del proyecto, asegurando calidad, cumplimiento normativo y optimización de recursos.",
             "beneficios": "<ul class='card_back-list'><li>Planificación, Administración, Seguimiento y Evaluación de Proyectos con metodología PMI.</li><li>Asesoría en Contratación y Licitaciones para el sector público y privado.</li><li>Supervisión Técnica y Control de Ejecución de obras y proyectos.</li><li>Gestión de Calidad y Seguridad en la Construcción.</li><li>Asesoría en Proyectos Productivos y Comunitarios.</li><li>Gestión de Asociaciones Público-Privadas (APP).</li><li>Diseño e Implementación de Sistemas de Gestión ISO.</li></ul>"
@@ -119,7 +119,7 @@ export var dataJSON = `{
         {
             "id": "4",  
             "bg": "white",
-            "image": "./assets/image/Formación.png",
+            "image": "./assets/image/Formación.webp",
             "title": "Formación y certificación profesional",
             "detalle": "Ofrecemos programas de capacitación especializados en la industria de la construcción y el desarrollo territorial, respaldados por el Ministerio de Trabajo. Nuestros cursos están diseñados para potenciar las habilidades técnicas y estratégicas de los profesionales del sector, brindándoles las herramientas necesarias para afrontar con confianza y eficiencia los desafíos del mercado.",
             "beneficios": "<ul class='card_back-list'><li>Fiscalización de Obras y Contratos de Construcción.</li><li>Supervisión y Residencia de Obras.</li><li>Dirección y Administración de Empresas de Construcción.</li><li>Formulación y Evaluación de Proyectos de Construcción.</li><li>Ordenamiento Territorial y Gestión del Suelo.</li><li>Gestión Ambiental mediante el Uso del Sistema QGIS I.</li><li>Gestión Ambiental mediante el Uso del Sistema QGIS II.</li></ul>"
@@ -129,13 +129,13 @@ export var dataJSON = `{
         {
             "id": "1",  
             "producto": "o4B",
-            "image": "./assets/image/producto_1_logo.png", 
+            "image": "./assets/image/producto_1_logo.webp", 
             "beneficios": "<ul class='list'><li>Cuenta con todo lo necesario para cubrir los procesos y necesidades que presenta el sector construcción. Facilita el control del presupuesto y el costo real del proyecto, el avance y la programación de las obras, los ingresos estimados y reales del proyecto.</li><li>Permite que su empresa avance en transformación digital, ofreciendo las bases requeridas para que sus transacciones, en todas las áreas de su empresa, se integren y administren en O4Bi de forma sencilla, eficiente y eficaz.</li></ul>"
         },
          {
             "id": "1",  
             "producto": "kantan",
-            "image": "./assets/image/producto_2_logo.png", 
+            "image": "./assets/image/producto_2_logo.webp", 
             "beneficios": "<ul class='list'><li>Estandariza los procesos y favorece la consistencia en la implementación de las normas, minimizando errores y no conformidades, y ayudando a corregirlas de manera más rápida.</li><li>Centraliza los procesos y actividades relacionadas con la calidad, el medio ambiente, la salud y la seguridad ocupacional, y la seguridad de la información, proporcionando mayor transparencia y visibilidad, y ayudando a construir confianza, tanto interna como externamente.</li></ul>"
         }
     ],
@@ -143,25 +143,25 @@ export var dataJSON = `{
         { 
             "id": "1",
             "name": "Planificación Territorial y Gestión del Suelo", 
-            "image": "./assets/image/proyecto_1.png", 
+            "image": "./assets/image/image_5.webp", 
             "detalle": "<ul class='list'><li>Planes de Uso y Gestión del Suelo en los GAD Municipales de Daule, Jaramijó, Las Lajas y Shushufindi.</li><li>Plan de legalización de asentamientos humanos en Durán, Daule, Huaquillas y el sector Monte Sinaí de Guayaquil.</li><li>Plan de desarrollo urbano de la Parroquia Urbana Satélite La Aurora del cantón Daule.</li></ul>"
         },   
         { 
             "id": "2",
             "name": "Arquitectura y Urbanismo", 
-            "image": "./assets/image/proyecto_2.png", 
+            "image": "./assets/image/image_2.webp", 
             "detalle": "<ul class='list'><li>Terminal Terrestre para el cantón Gualaceo en la provincia del Azuay</li><li>Estandarizadas San Miguel y Lumbaqui</li><li>Asesoría técnica en los Estudios y Diseño del Malecón de la ciudad de Babahoyo</li><li>Diseños integral de departamentos en General Villamil, Playas</li><li>Diseño de proyecto residencial en Gualaceo y Playas</li><li>Diseños integral de departamentos en General Villamil, Playas</li><li>Diseño de proyecto residencial en Gualaceo y Playas</li><li>Diseño de anteproyecto de hotel en Salinas</li></ul>"
         }, 
          { 
             "id": "3",
             "name": "Gestión de Proyectos", 
-            "image": "./assets/image/proyecto_3.png", 
+            "image": "./assets/image/image_3.webp", 
             "detalle": "<ul class='list'><li>Dirección de Obra proyecto urbanístico Vilanova.</li><li>Plan Parcial y proyecto de regularización del Hospital de SOLCA de Guayaquil.</li><li>Consultoría para la Elaboración de las Políticas Nacionales de Parques y Espacios Públicos.</li><li>Gerencia de Proyectos en instituciones privadas.</li><li>Administración de modelos financieros para una Concesión Público Privada.</li></ul>"
         },  
         { 
             "id": "4",
             "name": "Formación y certificación profesional", 
-            "image": "./assets/image/proyecto_4.png", 
+            "image": "./assets/image/image_4.webp", 
             "detalle": "<ul class='list'><li>Dirección de Obra proyecto urbanístico Vilanova.</li><li>Proyecto de regularización del Hospital de SOLCA de Guayaquil.</li><li>Consultoría para la Elaboración de las Políticas Nacionales de Parques y Espacios Públicos.</li><li>Gerencia de Proyectos en instituciones privadas.</li></ul>"
         }
     ]

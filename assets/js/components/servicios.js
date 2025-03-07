@@ -10,7 +10,7 @@ class cardServicios extends HTMLElement {
         this.innerHTML = this.servicios.map(function (data_) { 
                 return `<div class="serv_card">
                     <div class="card-box serv_card-front card-${data_.bg}">
-                        <img src="${data_.image}" alt="">
+                        <img src="${data_.image}" alt="${data_.title}">
                         <h5 class="card-title">${data_.title}</h5>
                         <p class="card-paragraph" class="txt-center">${data_.detalle}</p>
                         <button class="btn-secundary center" onclick="flipCard(this)">Ver más <i

@@ -1,6 +1,16 @@
-@import url(https://db.onlinewebfonts.com/c/2d1a413df57f4d042a07850a41e9239e?family=Texta+W00+Regular);
+@font-face {
+    font-family: "Texta W00 Regular";
+    src: url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.eot");
+    src: url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.svg#Texta W00 Regular")format("svg");
+}
+
 
 :root{
+    /* Color */
     --color-secundary: var(--color-secundary-500);
     --color-primary: var(--color-primary-500);
     --color-gray: var(--color-gray-500);
@@ -37,6 +47,7 @@
     --color-gray-800: #2f3030;
     --color-gray-900: #242525;
     --bg-section: rgba(151, 169, 176, 0.20); 
+    /* Size */
     --size-3xl: 3rem;
     --size-2xl: 2.5rem;
     --size-xxs: 0.25rem;
@@ -57,4 +68,10 @@
     --lh-title: 38px;
     --font-subtitle: 24px;
     --lh-subtitle: 28px;
+    /* Image */
+    --img-qs: url(./../image/qs.webp);
+    --img-overlay-contact:  url(./../image/overlay_contact.webp);
+    --img-bg-O4B:  url(./../image/producto_1.webp);
+    --img-bg-kantan:  url(./../image/producto_2.webp);
+
 }

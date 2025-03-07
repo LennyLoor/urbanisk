@@ -1,7 +1,4 @@
 
-
-
-
 /* SLIDER */
 var slider = $('.urb_home_slider');
 

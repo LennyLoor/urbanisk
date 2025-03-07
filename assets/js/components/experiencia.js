@@ -37,7 +37,7 @@ class listProjects extends HTMLElement {
             return ` 
                 <div class="exp_card">
                     <div class="exp-image ${data_.id}-img no-select">
-                        <img src="${data_.image}" alt="">
+                        <img width="300" src="${data_.image}" alt="${data_.name}">
                     </div>
                     <div class="exp-content">
                         <h4>${data_.name}</h4>
