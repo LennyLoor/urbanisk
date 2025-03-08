@@ -11,11 +11,11 @@ class cardNosotrosEP extends HTMLElement {
         this.innerHTML = this.nosotros.filter((data_) => data_.equipo == "Equipo Principal").map((data_) => {
             return `
                 <div class="nst_card-item card-${data_.id}">
-                    <span class="no-select tag-${data_.tag}">${data_.equipo}</span>
+                    <span class="no-select tag tag-${data_.tag}">${data_.equipo}</span>
                     <img width="182" height="182" src="${data_.image}" class="no-select">
                     <div class="item_content">
                         <div class="item_content-info">
-                            <b>${data_.name}</b>
+                            <h3>${data_.name}</h3>
                             <b>${data_.cargo}</b>
                             <p>${data_.detalle}</p>
                         </div>

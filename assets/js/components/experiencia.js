@@ -9,13 +9,11 @@ class listProjects extends HTMLElement {
     }
 
     connectedCallback() {
-        this.renderContent('planificacion-territorial'); // Establecer el contenido inicial por defecto
+        this.renderContent('planificacion-territorial');
     }
 
     renderContent(tab) {
         let filteredProjects;
-        
-        // Filtrar proyectos según la pestaña seleccionada
         switch (tab) {
             case 'planificacion-territorial':
                 filteredProjects = data.proyectos.filter(p => p.id === '1');
@@ -65,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Obtener el tipo de contenido de la pestaña y cargar los proyectos correspondientes
             const tabId = tab.getAttribute('data-tab');
-            projContent.renderContent(tabId); // Cambiar el contenido dinámicamente
+            projContent.renderContent(tabId);
         });
     });
 });

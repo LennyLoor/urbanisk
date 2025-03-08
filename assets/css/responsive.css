@@ -1,0 +1,48 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    /* Section 1 */
+    .urb_qs-img {
+        width: 320px;
+        height: 250px;
+    }
+
+    /* Section 2 */
+    .nst_card-item {
+        width: 235px;
+    }
+    .nst_sidebar{
+        width: 400px;
+    }
+    .urb_cont-box {
+        width: 100%;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    /* Nosotros */ 
+    .urb_qs-img {
+        width: 511px;
+        height: 292.053px;
+    } 
+    .nst_card-item {
+        width: 320px;
+    }
+    .nst_sidebar{
+        width: 400px;
+    }
+    /* Contact */ 
+    .urb_cont-box {
+        width: 100%;
+    }
+}

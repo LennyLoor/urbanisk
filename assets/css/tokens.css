@@ -2,20 +2,21 @@
     font-family: "Texta W00 Regular";
     src: url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.eot");
     src: url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.svg#Texta W00 Regular")format("svg");
+        url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.svg#Texta W00 Regular")format("svg");
 }
 
 
-:root{
+:root {
     /* Color */
     --color-secundary: var(--color-secundary-500);
     --color-primary: var(--color-primary-500);
     --color-gray: var(--color-gray-500);
     --color-text: var(--color-gray-900);
     --color-white: #ffffff;
+
     --color-primary-50: #e6eff3;
     --color-primary-100: #b0ced8;
     --color-primary-200: #8ab6c6;
@@ -26,6 +27,7 @@
     --color-primary-700: #00445c;
     --color-primary-800: #003548;
     --color-primary-900: #002837;
+
     --color-secundary-50: #faf5e6;
     --color-secundary-100: #efdfb1;
     --color-secundary-200: #e7d08c;
@@ -36,6 +38,7 @@
     --color-secundary-700: #906c03;
     --color-secundary-800: #705402;
     --color-secundary-900: #554002;
+
     --color-gray-50: #eeeeee;
     --color-gray-100: #cbcbcb;
     --color-gray-200: #b1b2b2;
@@ -46,7 +49,12 @@
     --color-gray-700: #3d3e3e;
     --color-gray-800: #2f3030;
     --color-gray-900: #242525;
-    --bg-section: rgba(151, 169, 176, 0.20); 
+
+    --bg-section: rgba(151, 169, 176, 0.20);
+    --bg-tab-inactive: rgb(220 226 227);
+    --bg-primary-gradient-360g: linear-gradient(356deg, var(--color-primary-900) 0%, var(--color-primary-500) 100%);
+
+    --color-white-opacity-50:rgb(255 255 255 / 70%);
     /* Size */
     --size-3xl: 3rem;
     --size-2xl: 2.5rem;
@@ -57,21 +65,57 @@
     --size-4xl: 4rem;
     --size-xs: 0.5rem;
     --size-lg: 1.5rem;
-    --pd-tb-box-sm: 70px;  
-    --pd-tb-box-md: 100px;
-    --pd-lr-box-md: 136px; 
-    --font-desktop-lg: 18px;
-    --font-desktop-md: 16px;
-    --font-btn: 16px;
+
+    --pd-tb-box-sm: 70px;
+    --pd-tb-box-md: 100px; 
+    --pd-lr-box-md: 100px;
+    --pd-box-sm: 70px 100px; 
+
+    --pd-input:  8px 16px; 
+
+    /* Font */
+    --font-body: 1rem;
+
+    --font-title: 2rem;
+    --font-subtitle: 1.6rem;
+    --font-btn-large: 1rem;
+
+    --font-h2: 1.5rem;
+    --font-h3: 1rem;
+    --font-small: .85rem;
+
+    --font-btn: 1rem;
     --font-btn-icon: 11.2px;
-    --font-title: 32px;
-    --lh-title: 38px;
-    --font-subtitle: 24px;
-    --lh-subtitle: 28px;
+    --font-list-style: .8rem;
+
     /* Image */
     --img-qs: url(./../image/qs.webp);
-    --img-overlay-contact:  url(./../image/overlay_contact.webp);
-    --img-bg-O4B:  url(./../image/producto_1.webp);
-    --img-bg-kantan:  url(./../image/producto_2.webp);
+    --img-overlay-contact: url(./../image/overlay_contact.webp);
+    --img-bg-O4B: url(./../image/producto_1.webp);
+    --img-bg-kantan: url(./../image/producto_2.webp);
 
+}
+
+
+
+@media (min-width: 1400px) {
+    :root {
+        --pd-box-sm: 70px 48px; 
+
+
+        --font-body: 1.08rem;
+
+        --font-title: 3rem;
+        --font-subtitle: 2.2rem;
+        --font-btn-large: 1.2rem;
+
+        --font-h2: 1.8rem;
+        --font-h3: 1.1rem;
+        --font-small: .85rem;
+
+        --pd-tb-box-sm: 70px;
+        --pd-tb-box-md: 100px;
+        --pd-lr-box-md: 136px;
+
+    }
 }

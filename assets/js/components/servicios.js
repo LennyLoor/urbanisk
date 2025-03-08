@@ -11,14 +11,14 @@ class cardServicios extends HTMLElement {
                 return `<div class="serv_card">
                     <div class="card-box serv_card-front card-${data_.bg}">
                         <img src="${data_.image}" alt="${data_.title}">
-                        <h5 class="card-title">${data_.title}</h5>
-                        <p class="card-paragraph" class="txt-center">${data_.detalle}</p>
+                        <h3 class="txt-center">${data_.title}</h3>
+                        <p class="txt-center">${data_.detalle}</p>
                         <button class="btn-secundary center" onclick="flipCard(this)">Ver más <i
                                 class="fa-solid fa-external-link-alt"></i> </button>
                     </div>
                     <div class="card-box serv_card-back">
                         <div class="card_back-header">
-                            <h5 class="card-title">Detalles del servicio</h5>
+                            <h3>Detalles del servicio<h3>
                             <a onclick="flipCard(this)"><i class="fa-solid fa-window-close"></i></a>
                         </div>
                         ${data_.beneficios}

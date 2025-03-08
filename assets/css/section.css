@@ -3,17 +3,17 @@
 .bg-section {
     background-color: var(--bg-section);
 }
-a{
-    text-decoration: none;
-}
-/* HOME */
+
+/* ------------------------
+        INICIO
+-------------------------*/
 .urb_home {
     height: 100vh;
     position: relative;
 }
 
 .urb_home_content {
-    width: 60%;
+    width: 70%;
     color: var(--color-white);
     display: flex;
     flex-direction: column;
@@ -21,22 +21,8 @@ a{
     z-index: 2;
 }
 
-.urb_home_content h1 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 3.25rem;
-}
-
-.urb_home_content p {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 2.125rem;
-}
 .urb_home_content a {
     text-align: center;
-    font-size: 1.25rem;
     transition: .5s;
 }
 
@@ -64,7 +50,7 @@ a{
 }
 
 /* ------------------------
-        SECTION 2 
+        NOSOTROS
 -------------------------*/
 .urb_qs {
     padding: var(--pd-tb-box-md) var(--pd-lr-box-md);
@@ -76,8 +62,6 @@ a{
     background-color: var(--color-gray-500);
     background-image: var(--img-qs);
     background-position: center;
-    width: 511px;
-    height: 292.053px;
     aspect-ratio: 511.00/292.05;
     border-radius: 0px 54px;
 }
@@ -85,12 +69,11 @@ a{
 .urb_qs-content {
     display: flex;
     gap: 16px;
-    gap: 16px;
     flex-direction: column;
 }
 
 /* ------------------------
-        SECTION 3 
+        SERVICIOS
 -------------------------*/
 .urb_serv {
     display: flex;
@@ -107,7 +90,7 @@ a{
 }
 
 /* ------------------------
-        SECTION 4 
+        PRODUCTOS
 -------------------------*/
 .urb_box-prod {
     display: flex;
@@ -141,6 +124,10 @@ a{
     border-radius: 0.5rem 0 0 0.5rem;
 }
 
+.prod-image img {
+    width: 8rem;
+}
+
 .o4B-img {
     background-image: var(--img-bg-O4B);
 }
@@ -149,16 +136,12 @@ a{
     background-image: var(--img-bg-kantan);
 }
 
-.prod-image img {
-    width: 8rem;
-}
-
 /* ------------------------
-        SECTION 5 
+       EQUIPO
 -------------------------*/
 .urb_nst_title {
     text-align: center;
-    background-color: var(--color-primary);
+    background: var(--bg-primary-gradient-360g);
     color: white;
     padding: 100px 0 216px 0;
     display: flex;
@@ -190,7 +173,7 @@ a{
     width: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 48px;
 
 }
 
@@ -258,7 +241,6 @@ a{
 }
 
 .item_content-footer i {
-    font-size: 30px;
     color: var(--color-primary);
 }
 
@@ -266,8 +248,7 @@ a{
     gap: 16px;
 }
 
-/*  */
-/* Estilos del Sidebar */
+/* Sidebar */
 .nst_sidebar {
     height: 100vh;
     width: 0;
@@ -281,7 +262,6 @@ a{
     overflow: hidden;
 }
 
-/* Contenido del Sidebar */
 .nst_sidebar-content {
     color: var(--color-text);
     padding: 64px 32px;
@@ -301,22 +281,6 @@ a{
     height: calc(100vh - 120px);
 }
 
-/* Botón de cerrar */
-.close {
-    color: var(--color-gray-200);
-    font-size: 36px;
-    font-weight: bold;
-    top: 8px;
-    right: 36px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 2;
-}
-
-.close:hover,
-.close:focus {
-    cursor: pointer;
-}
 
 .nst_sidebar-content img {
     border-radius: 50%;
@@ -354,7 +318,6 @@ a{
     background-color: var(--color-primary-50)
 }
 
-/* Mostrar el overlay cuando el sidebar esté abierto */
 .overlay.show {
     display: block;
 }
@@ -373,7 +336,7 @@ a{
     background-color: var(--color-gray-200);
 }
 
-/* Agregar animaciones de fadeIn y fadeOut */
+/* animaciones fadeIn y fadeOut */
 .nst_sidebar {
     position: fixed;
     top: 0;
@@ -414,8 +377,15 @@ a{
 }
 
 /* ------------------------
-        SECTION 5 
+        EXPERIENCIA
 -------------------------*/
+
+.urb_proj-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .exp_card {
     display: flex;
     align-items: center;
@@ -451,10 +421,8 @@ a{
     height: auto;
 }
 
-.urb_proj-content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.exp-navTab-proj {
+    gap: .5rem;
 }
 
 .exp-navTab-proj a {
@@ -462,10 +430,11 @@ a{
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 1rem;
     border-radius: 4px;
     text-decoration: none;
     color: var(--color-text);
+    background-color: var(--bg-tab-inactive);
 }
 
 .exp-navTab-proj .active {
@@ -475,20 +444,10 @@ a{
 
 
 /* ------------------------
-        SECTION 6 
+        ALIANZAS
 -------------------------*/
 .urb_ali {
     position: relative;
-}
-
-.urb_ali-images {
-    display: flex;
-    width: 100%;
-    height: 119px;
-    padding: 0.72px 0.795px 0.03px 0.795px;
-    justify-content: center;
-    align-items: center;
-    gap: 39.18px;
 }
 
 .urb_ali-svgTop {
@@ -513,11 +472,66 @@ a{
     right: 100px;
 }
 
+/* slider */
+
+.urb_ali-images {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    white-space: nowrap;
+}
+
+.urb_ali-images::before,
+.urb_ali-images::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    /* Tamaño del difuminado */
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.urb_ali-images::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.urb_ali-images::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.urb_ali-images .slider-wrapper {
+    display: flex;
+    gap: 48px;
+    animation: scroll 15s linear infinite;
+}
+
+.urb_ali-images img {
+    width: auto;
+    height: 80px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-35%);
+    }
+}
+
 /* ------------------------
-        SECTION 7
+        CONTACT
 -------------------------*/
 .overlay-contact {
-    background-image:var(--img-overlay-contact);
+    background-image: var(--img-overlay-contact);
     width: 50%;
     height: 100%;
     background-position: right;
@@ -529,7 +543,7 @@ a{
 .urb_cont {
     display: flex;
     align-items: flex-start;
-    padding: 70px 48px;
+    padding: var(--pd-box-sm);
     align-self: stretch;
     background-color: var(--color-gray-900);
     color: white;
@@ -545,8 +559,13 @@ a{
     z-index: 2;
 }
 
+.urb_cont p,
+small {
+    color: var(--color-white-opacity-50);
+}
+
 .urb_cont a {
-    color: white;
+    color: var(--color-white-opacity-50);
     text-decoration: none;
 }
 
@@ -599,149 +618,6 @@ a{
     gap: 16px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    font-size: 14px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    background: rgba(238, 238, 238, 0.10);
-}
-
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-.form-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.form-row .form-group {
-    flex: 1;
-}
-
-.checkbox-container a {
-    color: var(--color-primary-300);
-}
-
-.checkbox-container input {
-    margin-right: 10px;
-}
-
-/* Estilo personalizado para el checkbox */
-.checkbox-container input[type="checkbox"] {
-    display: none;
-    /* Ocultamos el checkbox original */
-}
-
-.checkbox-container label {
-    position: relative;
-    padding-left: 30px;
-    /* Espacio para el checkbox personalizado */
-    cursor: pointer;
-    margin: 0;
-}
-
-.checkbox-container label::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
-    background-color: #fff;
-    transition: all 0.3s ease;
-    text-align: center;
-}
-
-.checkbox-container input[type="checkbox"]:checked+label::before {
-    background-color: var(--color-primary);
-}
-
-.checkbox-container input[type="checkbox"]:checked+label::after {
-    content: '\2713';
-    /* Checkmark */
-    position: absolute;
-    left: 4px;
-    top: -1px;
-    color: white;
-    font-size: 16px;
-}
-
-form button {
-    width: 100%;
-}
-
-/* Estilos del modal */
-.modal {
-    display: none;
-    /* Inicialmente oculto */
-    position: fixed;
-    z-index: 200;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 60px;
-}
-
-.modal-content {
-    background-color: white;
-    margin: 5% auto;
-    padding: 20px;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 600px;
-}
-
-.modal-header {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.modal-footer {
-    text-align: right;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/*  */
 .urb_copy {
     display: flex;
     padding: 16px 149px;
@@ -754,23 +630,3 @@ form button {
     background: var(--color-gray-800);
     text-align: center;
 }
-/*
- *  STYLE 3
- */
-
- body::-webkit-scrollbar-track
- {
-     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-     background-color: #F5F5F5;
- }
- 
- body::-webkit-scrollbar
- {
-     width: 6px;
-     background-color: #F5F5F5;
- }
- 
- body::-webkit-scrollbar-thumb
- {
-     background-color: var(--color-secundary);
- }

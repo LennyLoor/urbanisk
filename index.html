@@ -7,6 +7,7 @@
     <title>Urbanisk</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <script src="https://kit.fontawesome.com/b229e29af4.js" crossorigin="anonymous"></script>
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 </head>
@@ -22,8 +23,10 @@
                 <li class="urb_nav-listItem"><a class="listItem" data="item4" href="#productos">Productos</a></li>
                 <li class="urb_nav-listItem"><a class="listItem" data="item5" href="#equipo">Equipo</a></li>
                 <li class="urb_nav-listItem"><a class="listItem" data="item6" href="#experiencia">Experiencia</a></li>
-                <li class="urb_nav-listItem"><a class="listItem" data="item7" href="#alianzas">Alianzas estratégicas</a></li>
-                <li class="urb_nav-listItem-contacto"><a class="listItem" data="item8" href="#contacto" class="nav-btn">Contacto</a></li>
+                <li class="urb_nav-listItem"><a class="listItem" data="item7" href="#alianzas">Alianzas estratégicas</a>
+                </li>
+                <li class="urb_nav-listItem-contacto"><a class="listItem" data="item8" href="#contacto"
+                        class="nav-btn">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -31,8 +34,10 @@
         <!-- Inicio -->
         <section id="inicio" class="urb_home center">
             <div class="urb_home_content">
-                <h1>Transformamos el territorio para construir ciudades sostenibles</h1>
-                <p>Soluciones innovadoras en planificación territorial, diseño arquitectónico y urbano, medio ambiente y
+                <h1 class="urb_home-title txt-center">Transformamos el territorio para construir ciudades sostenibles
+                </h1>
+                <p class="urb_home-subtitle txt-center">Soluciones innovadoras en planificación territorial, diseño
+                    arquitectónico y urbano, medio ambiente y
                     gestión de proyectos para un desarrollo eficiente y sostenible.</p>
                 <a href="#contacto" class="btn-primary m-auto no-select">Hablemos de tu proyecto <i
                         class="fa-solid fa-chevron-down"></i></a>
@@ -50,8 +55,8 @@
             <div class="urb_qs-img no-select"></div>
             <div class="urb_qs-content">
                 <div class="urb_box-title">
-                    <b class="urb_subtitle">Sobre Nosotros</b>
-                    <h1 class="urb_title">¿Quiénes somos?</h1>
+                    <h3>Sobre Nosotros</h3>
+                    <h2>¿Quiénes somos?</h2>
                 </div>
                 <p class="urb_p">Desde 2008, nos hemos consolidado como una empresa líder en consultoría y gestión de
                     proyectos,
@@ -65,26 +70,24 @@
         <!-- Servicios -->
         <section id="servicios" class="p-section urb_serv bg-section">
             <div class="urb_serv-title txt-center">
-                <b class="urb_subtitle">Nuestros Servicios</b>
-                <h1 class="urb_title">Soluciones a tu medida</h1>
+                <h3>Nuestros Servicios</h3>
+                <h2>Soluciones a tu medida</h2>
             </div>
             <card-servicios class="urb_serv-content"></card-servicios>
         </section>
         <!-- Productos -->
         <section id="productos" class="p-section">
             <div class="urb_box-title">
-                <b class="urb_subtitle">Nuestros Productos</b>
-                <h1 class="urb_title">Impulsamos soluciones tecnológicas y control remoto con el respaldo de softwares
-                    líderes
-                </h1>
+                <h3>Nuestros Productos</h3>
+                <h2>Impulsamos soluciones tecnológicas y control remoto con el respaldo de softwares líderes </h2>
             </div>
             <card-productos class="urb_box-prod"></card-productos>
         </section>
         <!-- Nuestro Equipo -->
         <section id="equipo" class="section_nst">
             <div class="urb_box-title urb_nst_title">
-                <b class="urb_subtitle">Nuestro Equipo</b>
-                <h1 class="urb_title">Más que consultores, somos aliados estratégicos en cada proyecto</h1>
+                <h3>Nuestro Equipo</h3>
+                <h2 class="subtitle-secundary">Más que consultores, somos aliados estratégicos en cada proyecto</h2>
                 <p>La experiencia y especialización de nuestro equipo nos permite abordar cada proyecto con una
                     visión integral, ofreciendo soluciones innovadoras en el diseño arquitectónico, planificación
                     territorial y la gestión urbana y ambiental.
@@ -99,8 +102,8 @@
         <!-- Experiencia -->
         <section id="experiencia" class="p-section bg-section">
             <div class="txt-center">
-                <b class="urb_subtitle">Experiencia</b>
-                <h1 class="urb_title">Experiencia y calidad en cada proyecto</h1>
+                <h3 class="urb_subtitle">Experiencia</h3>
+                <h2>Experiencia y calidad en cada proyecto</h2>
             </div>
             <div class="urb_proj-content">
                 <div class="exp-navTab-proj center" id="projNavTab">
@@ -116,15 +119,11 @@
         <section id="alianzas" class="urb_ali p-section">
             <span class="urb_ali-svgTop"></span>
             <div class="txt-center">
-                <b class="urb_subtitle">Alianzas Estratégicas</b>
-                <h1 class="urb_title">Creciendo juntos para llegar más lejos</h1>
+                <h3>Alianzas Estratégicas</h3>
+                <h2>Creciendo juntos para llegar más lejos</h2>
             </div>
             <div class="urb_ali-images no-select">
-                <img src="./assets/image/alianza_1.webp" alt="">
-                <img src="./assets/image/alianza_2.webp" alt="">
-                <img src="./assets/image/alianza_3.webp" alt="">
-                <img src="./assets/image/alianza_4.webp" alt="">
-                <img src="./assets/image/alianza_5.webp" alt="">
+                <div class="slider-wrapper" id="urb_ali-slider"></div>
             </div>
             <span class="urb_ali-svgBottom"></span>
         </section>
@@ -136,10 +135,12 @@
                     <img width="150" src="./assets/image/logo_urbanisk.webp" alt="">
                     <div class="urb_cont-detalle">
                         <h3>Contáctanos</h3>
-                        <P>Puedes escribirnos a través de nuestros canales o seguirnos en redes sociales.</P>
+                        <p>Puedes escribirnos a través de nuestros canales o seguirnos en redes sociales.</p>
                         <a><i class="fa-solid fa-phone"></i>098 887 2797</a>
-                        <a href="https://wa.me/56963380098" target="_blank"><i class="fa-brands fa-whatsapp"></i>096 338 0098 </a>
-                        <a href="mailto:proyectos@urbansitikconsultores.com"><i class="fa-solid fa-envelope"></i>proyectos@urbansitikconsultores.com</a>
+                        <a href="https://wa.me/56963380098" target="_blank"><i class="fa-brands fa-whatsapp"></i>096 338
+                            0098 </a>
+                        <a href="mailto:proyectos@urbansitikconsultores.com"><i
+                                class="fa-solid fa-envelope"></i>proyectos@urbansitikconsultores.com</a>
                     </div>
                 </div>
                 <div class="urb_cont-2">
@@ -154,12 +155,14 @@
                             Urbanización Sambocity Etapa Hollywood Park Mz. 5 V1
                             <br><b>Daule – La Aurora</b>
                         </a>
-    
+
                     </div>
                     <div class="urb_cont-detalle">
                         <h3>Síguenos</h3>
-                        <a href="https://www.instagram.com/urbanistik_consultores?igsh=MTEweWx5N29qMmN3MA==" target="_blank"><i class="fa-brands fa-instagram"></i>@urbanistik_consultores</a>
-                        <a href="https://www.linkedin.com/company/urbanistik-consultores/" target="_blank"><i class="fa-brands fa-linkedin"></i>@urbanistik-consultores</a>
+                        <a href="https://www.instagram.com/urbanistik_consultores?igsh=MTEweWx5N29qMmN3MA=="
+                            target="_blank"><i class="fa-brands fa-instagram"></i>@urbanistik_consultores</a>
+                        <a href="https://www.linkedin.com/company/urbanistik-consultores/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i>@urbanistik-consultores</a>
                     </div>
                 </div>
                 <div class="urb_cont-3">
@@ -174,17 +177,20 @@
                             </div>
                             <div class="form-group">
                                 <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+                                <input type="email" id="email" name="email" required
+                                    placeholder="Ingresa tu correo electrónico">
                             </div>
                         </div>
-    
+
                         <div class="form-group">
                             <label for="mensaje">Mensaje:</label>
-                            <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos sobre tu proyecto, tus ideas o necesidades"></textarea>
+                            <textarea id="mensaje" name="mensaje" required
+                                placeholder="Cuéntanos sobre tu proyecto, tus ideas o necesidades"></textarea>
                         </div>
-                        <small>Al enviar el formulario asumimos su conformidad con nuestro aviso legal y nuestra política de privacidad. </small>
-                        
-                        <button type="submit" class="btn-primary m-auto no-select">Enviar</button> 
+                        <small>Al enviar el formulario asumimos su conformidad con nuestro aviso legal y nuestra
+                            política de privacidad. </small>
+
+                        <button type="submit" class="btn-primary m-auto no-select">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -193,9 +199,9 @@
             © 2025 Desarrollado por Lenny Loor
         </section>
     </main>
-    <!-- script -->    
+    <!-- script -->
     <script src="assets/js/main.js"></script>
-    <script type="module" src="/assets/js/components/components.js"></script>
+    <script type="module" src="/assets/js/components.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js'></script>
 </body>
 

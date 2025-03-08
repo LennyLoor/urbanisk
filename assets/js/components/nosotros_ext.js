@@ -9,7 +9,7 @@ class cardNosotrosEXT extends HTMLElement {
     connectedCallback() {
          this.innerHTML = this.nosotros_ext.filter((data_) => data_.equipo == "Externo").map((data_) => {
             return `<div class="nst_card-item card-${data_.id}">
-                        <span class="no-select tag-${data_.tag}"">${data_.equipo}</span>
+                        <span class="no-select tag tag-${data_.tag}"">${data_.equipo}</span>
                         <img width="182" height="182" src="${data_.image}" class="no-select">
                         <div class="item_content">
                             <div class="item_content-info">
