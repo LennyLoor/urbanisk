@@ -54,7 +54,7 @@
     --bg-tab-inactive: rgb(220 226 227);
     --bg-primary-gradient-360g: linear-gradient(356deg, var(--color-primary-900) 0%, var(--color-primary-500) 100%);
 
-    --color-white-opacity-50:rgb(255 255 255 / 70%);
+    --color-white-opacity-50: rgb(255 255 255 / 70%);
     /* Size */
     --size-3xl: 3rem;
     --size-2xl: 2.5rem;
@@ -67,11 +67,11 @@
     --size-lg: 1.5rem;
 
     --pd-tb-box-sm: 70px;
-    --pd-tb-box-md: 100px; 
+    --pd-tb-box-md: 100px;
     --pd-lr-box-md: 100px;
-    --pd-box-sm: 70px 100px; 
+    --pd-box-sm: 70px 100px;
 
-    --pd-input:  8px 16px; 
+    --pd-input: 8px 16px;
 
     /* Font */
     --font-body: 1rem;
@@ -96,11 +96,29 @@
 
 }
 
+@media only screen and (max-width: 436px) {
+    :root {
+        --pd-tb-box-sm: 50px;
+        --pd-tb-box-md: 70px;
+        --pd-lr-box-md: 24px;
+        --pd-box-sm: 0px;
+        --font-body: 1rem;
+        --font-title: 1.9rem;
+        --font-subtitle: 1.3rem;
+        --font-btn-large: 1rem;
+        --font-h2: 1.5rem;
+        --font-h3: 1rem;
+        --font-small: .85rem;
+        --font-btn: 1rem;
+        --font-btn-icon: 11.2px;
+        --font-list-style: .8rem;
+    }
 
+}
 
 @media (min-width: 1400px) {
     :root {
-        --pd-box-sm: 70px 136px; 
+        --pd-box-sm: 70px 136px;
 
 
         --font-body: 1.08rem;

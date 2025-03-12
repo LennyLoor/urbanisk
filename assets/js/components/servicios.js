@@ -18,7 +18,7 @@ class cardServicios extends HTMLElement {
                     </div>
                     <div class="card-box serv_card-back">
                         <div class="card_back-header">
-                            <h3>Detalles del servicio<h3>
+                            <h3>Detalles del servicio</h3>
                             <a onclick="flipCard(this)"><i class="fa-solid fa-window-close"></i></a>
                         </div>
                         ${data_.beneficios}

@@ -8,15 +8,22 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <script src="https://kit.fontawesome.com/b229e29af4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 </head>
 
 <body>
     <header id="header-scroll">
-        <img data-logo width="78" src="./assets/image/logo_urbanisk_blanco.webp">
+        <div class="urb_nav-right">
+            <img data-logo width="78" src="./assets/image/logo_urbanisk_blanco.webp">
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
         <nav class="urb_nav">
-            <ul class="urb_nav-list" data-menu>
+            <ul class="urb_nav-list" id="urb_nav-list" data-menu>
                 <li class="urb_nav-listItem"><a class="listItem" data="item1" href="#inicio">Inicio</a></li>
                 <li class="urb_nav-listItem"><a class="listItem" data="item2" href="#nosotros">Nosotros</a></li>
                 <li class="urb_nav-listItem"><a class="listItem" data="item3" href="#servicios">Servicios</a></li>
@@ -136,9 +143,9 @@
                     <div class="urb_cont-detalle">
                         <h3>Contáctanos</h3>
                         <p>Puedes escribirnos a través de nuestros canales o seguirnos en redes sociales.</p>
-                        <a><i class="fa-solid fa-phone"></i>098 887 2797</a>
-                        <a href="https://wa.me/56963380098" target="_blank"><i class="fa-brands fa-whatsapp"></i>096 338
-                            0098 </a>
+                        <a><i class="fa-solid fa-phone"></i> +593 98 887 2797</a>
+                        <a href="https://wa.me/56963380098" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>+593 96 338 0098 </a>
                         <a href="mailto:proyectos@urbansitikconsultores.com"><i
                                 class="fa-solid fa-envelope"></i>proyectos@urbansitikconsultores.com</a>
                     </div>
@@ -146,12 +153,12 @@
                 <div class="urb_cont-2">
                     <div class="of-box">
                         <h3>Oficinas</h3>
-                        <a>
-                            Francisco de Marcos 330 Y Chimborazo.
+                        <a href="https://maps.app.goo.gl/XM1xzDdxDyqjLnxM9" target="_blank">
+                            Francisco de Marcos 330 y Chimborazo.
                             2do. Piso 2B.
                             <br><b>Guayaquil</b>
                         </a>
-                        <a>
+                        <a href="https://maps.app.goo.gl/P4NmPUtEtdd4FQfE9" target="_blank">
                             Urbanización Sambocity Etapa Hollywood Park Mz. 5 V1
                             <br><b>Daule – La Aurora</b>
                         </a>
@@ -166,7 +173,7 @@
                     </div>
                 </div>
                 <div class="urb_cont-3">
-                    <h3>Conversemos sobre tu proyecto.</h3>
+                    <h3>Hablemos de tu proyecto.</h3>
                     <P>Déjanos tus datos y te contactaremos pronto para analizar tus necesidades y desarrollar proyectos
                         juntos.</P>
                     <form action="#" method="POST">
@@ -199,6 +206,7 @@
             © 2025 Desarrollado por Lenny Loor
         </section>
     </main>
+    <a class="btn-scrollTop"></a>
     <!-- script -->
     <script src="assets/js/main.js"></script>
     <script type="module" src="/assets/js/components.js"></script>

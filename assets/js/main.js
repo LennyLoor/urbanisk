@@ -16,6 +16,34 @@ function flipCard(element) {
   }
 }
 /*  */
+document.querySelector(".menu-toggle").addEventListener("click", function() {
+  const menu = document.querySelector(".urb_nav");
+  if (menu.classList.contains("active")) {
+      menu.classList.add("fade-out");
+      setTimeout(() => {
+          menu.classList.remove("active", "fade-out");
+          document.getElementById('header-scroll').style.backgroundColor = "transparent" 
+      }, 500);
+  } else {
+      menu.classList.add("active");
+      document.getElementById('header-scroll').style.backgroundColor = "#006082" 
+  }
+  this.classList.toggle("active");
+});
+ 
+
+document.querySelectorAll(".listItem").forEach(item => {
+  item.addEventListener("click", function() {
+      const menu = document.querySelector(".urb_nav");
+      menu.classList.add("fade-out");
+      setTimeout(() => {
+          menu.classList.remove("active", "fade-out");
+      }, 500);
+      document.querySelector(".menu-toggle").classList.remove("active");
+  });
+});
+
+/*  */
 document.addEventListener("DOMContentLoaded", function () {
   const slider = document.getElementById("urb_ali-slider");
   const images = [

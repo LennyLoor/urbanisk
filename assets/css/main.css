@@ -1,9 +1,13 @@
 @import './tokens.css';
 @import './section.css';
 
-body,
-html {
-    margin: 0 auto;
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
     font-family: 'Texta', sans-serif;
     position: relative;
     width: 100%;
@@ -495,3 +499,4 @@ a>i {
 button {
     font-family: 'Texta', sans-serif;
 }
+

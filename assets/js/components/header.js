@@ -5,6 +5,7 @@
         header: document.getElementById('header-scroll'), 
         section: document.querySelectorAll("section"),
         menu: document.querySelectorAll(".urb_nav-list > li > a"), 
+        nav: document.getElementById("urb_nav-list"), 
     }];
 
     elements.forEach((element) => {
@@ -14,7 +15,7 @@
             const scrollPos = window.pageYOffset;
             // Posición del Scroll
             if (scrollPos === 0) {
-                element.header.style.backgroundColor = "transparent";
+                element.header.style.backgroundColor = "transparent"; 
             } else {
                 element.header.style.backgroundColor = "#006082";
             }
@@ -22,7 +23,7 @@
         function resetHeaderColor() {
             const scrollPos = window.pageYOffset;
             if (scrollPos === 0) {
-                element.header.style.backgroundColor = "transparent";
+                element.header.style.backgroundColor = "transparent"; 
             } else {
                 element.header.style.backgroundColor = "#006082";
             }
