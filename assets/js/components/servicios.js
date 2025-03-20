@@ -11,17 +11,16 @@ class cardServicios extends HTMLElement {
                 return `<div class="serv_card">
                     <div class="card-box serv_card-front card-${data_.bg}">
                         <img src="${data_.image}" alt="${data_.title}">
-                        <h3 class="txt-center">${data_.title}</h3>
-                        <p class="txt-center">${data_.detalle}</p>
-                        <button class="btn-secundary center" onclick="flipCard(this)">Ver más <i
-                                class="fa-solid fa-external-link-alt"></i> </button>
+                        <b class="txt-center"> ${data_.title} </b>
+                        <p class="txt-secundary txt-center">${data_.detalle}</p>
+                        <button class="urb_btn btn-secundary center" onclick="flipCard(this)">Ver más<i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                     <div class="card-box serv_card-back">
                         <div class="card_back-header">
-                            <h3>Detalles del servicio</h3>
-                            <a onclick="flipCard(this)"><i class="fa-solid fa-window-close"></i></a>
+                            <h3>Detalles del servicio</h3> 
                         </div>
                         ${data_.beneficios}
+                         <button class="urb_btn btn-secundary center card-btn-footer" onclick="flipCard(this)"><i class="fa-solid fa-chevron-left"></i>Regresar</button>
                     </div>
                 </div>`; 
         }).join('')

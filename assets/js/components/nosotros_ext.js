@@ -14,10 +14,10 @@ class cardNosotrosEXT extends HTMLElement {
                         <div class="item_content">
                             <div class="item_content-info">
                                 <b class="info-name">${data_.name}</b>
-                                <p><b>${data_.cargo}</b> - ${data_.detalle}</p>
+                                 ${data_.cargo} 
                             </div>
                             <div class="item_content-footer center"> 
-                                <button class="btn-secundary center no-select btn-ver-mas-ext" data-id="${data_.id}">
+                                <button class="urb_btn btn-secundary center no-select btn-ver-mas-ext" data-id="${data_.id}">
                                     Ver más <i class="fa-solid fa-external-link-alt"></i>
                                 </button>
                             </div>
@@ -28,14 +28,14 @@ class cardNosotrosEXT extends HTMLElement {
             document.body.insertAdjacentHTML("beforeend", `
                 <div id="overlay_ext" class="overlay"></div>
                 <div id="sidebar_ext" class="nst_sidebar">
-                    <a class="close close_ext"><i class="fa-solid fa-square-xmark"></i></a> 
+                    <a class="close-modal close_ext"><i class="fa-solid fa-square-xmark"></i></a> 
                     <div class="nst_sidebar-content">
                         <img id="modal-image-ext" width="182" height="182" class="no-select">
                         <div class="content-info">
                             <div>
-                                <h2 id="modal-name-ext"></h2>
-                                <h4 id="modal-cargo-ext"></h4>
+                                <h2 id="modal-name-ext"></h2> 
                             </div>
+                            <div id="modal-cargo-ext" class="card-detalle"></div>
                             <p id="modal-info-ext"></p>
                         </div>
                     </div> 
@@ -58,9 +58,9 @@ class cardNosotrosEXT extends HTMLElement {
         const sidebarExt = document.getElementById("sidebar_ext");
         const overlayExt = document.getElementById("overlay_ext");
 
-        const isOpen = sidebarExt.classList.contains("active");
+        const isOpenExt = sidebarExt.classList.contains("active");
 
-        if (isOpen) {
+        if (isOpenExt) {
             document.body.style.overflow = 'auto'; 
             sidebarExt.classList.remove("active"); 
             overlayExt.classList.remove("show"); 
@@ -71,7 +71,7 @@ class cardNosotrosEXT extends HTMLElement {
                 if (person) {
                     document.getElementById("modal-image-ext").src = person.image;
                     document.getElementById("modal-name-ext").textContent = person.name; 
-                    document.getElementById("modal-cargo-ext").textContent = person.cargo + '-' + person.detalle; 
+                    document.getElementById("modal-cargo-ext").textContent = person.cardDetalle; 
                     document.getElementById("modal-info-ext").textContent = person.info; 
                 } else {
                     console.error("No se encontró una persona con el ID:", id);

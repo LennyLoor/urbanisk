@@ -9,10 +9,11 @@ class cardProductos extends HTMLElement {
     connectedCallback() {
         this.innerHTML = this.productos.map(function (data_) { 
                 return `<div class="prod_card">
-                    <div class="prod-image ${data_.producto}-img no-select">
-                        <img src="${data_.image}" alt="">
+                    <div class="prod-image ${data_.producto}-img no-select"> </div>
+                    <div class="prod-content">
+                        <h4>${data_.title}</h4>
+                        <p class="txt-secundary">${data_.beneficios}</p>
                     </div>
-                    ${data_.beneficios}
                 </div>`; 
         }).join('')
     }

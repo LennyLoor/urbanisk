@@ -1,21 +1,18 @@
-@font-face {
-    font-family: "Texta W00 Regular";
-    src: url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.eot");
-    src: url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.woff2")format("woff2"),
-        url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.woff")format("woff"),
-        url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.ttf")format("truetype"),
-        url("https://db.onlinewebfonts.com/t/2d1a413df57f4d042a07850a41e9239e.svg#Texta W00 Regular")format("svg");
-}
-
+@import url(https://fonts.bunny.net/css);
 
 :root {
+
+    --font: "Lato", sans-serif;
     /* Color */
     --color-secundary: var(--color-secundary-500);
     --color-primary: var(--color-primary-500);
     --color-gray: var(--color-gray-500);
     --color-text: var(--color-gray-900);
+    --color-text-secundary: var(--color-gray-500);
     --color-white: #ffffff;
+
+    --btn-disabled: var(--color-gray-200);
+    --txt-disabled: var(--color-gray-700);
 
     --color-primary-50: #e6eff3;
     --color-primary-100: #b0ced8;
@@ -66,19 +63,27 @@
     --size-xs: 0.5rem;
     --size-lg: 1.5rem;
 
+    --width-prod: 70vw;
+
     --pd-tb-box-sm: 70px;
     --pd-tb-box-md: 100px;
     --pd-lr-box-md: 100px;
-    --pd-box-sm: 70px 100px;
+    
+    --pd-box-sm: 100px 100px;
 
-    --pd-input: 8px 16px;
+    --qs-size-image: 600px;
+    --qs-pd-box: 100px 100px 100px 570px; 
+    
+
+    --pd-input: 8px 12px;
 
     /* Font */
-    --font-body: 1rem;
+    --font-body: 1rem; 
 
-    --font-title: 2rem;
-    --font-subtitle: 1.6rem;
+    --font-title: 36px;
+    --font-subtitle: 1.2rem;
     --font-btn-large: 1rem;
+    --font-list-ico: .5rem;
 
     --font-h2: 1.5rem;
     --font-h3: 1rem;
@@ -93,47 +98,32 @@
     --img-overlay-contact: url(./../image/overlay_contact.webp);
     --img-bg-O4B: url(./../image/producto_1.webp);
     --img-bg-kantan: url(./../image/producto_2.webp);
+    --img-overlay-nst: url(../image/overlay_nst.webp);
 
 }
+/* 
+@media only screen and (max-width: 1200px) {
 
+    :root{
+        --pd-lr-box-md: 50px;
+    }
+}
 @media only screen and (max-width: 436px) {
     :root {
         --pd-tb-box-sm: 50px;
         --pd-tb-box-md: 70px;
         --pd-lr-box-md: 24px;
-        --pd-box-sm: 0px;
-        --font-body: 1rem;
-        --font-title: 1.9rem;
-        --font-subtitle: 1.3rem;
-        --font-btn-large: 1rem;
-        --font-h2: 1.5rem;
-        --font-h3: 1rem;
-        --font-small: .85rem;
-        --font-btn: 1rem;
-        --font-btn-icon: 11.2px;
-        --font-list-style: .8rem;
+        --pd-box-sm: 0px; 
     }
 
 }
 
 @media (min-width: 1400px) {
     :root {
-        --pd-box-sm: 70px 136px;
-
-
-        --font-body: 1.08rem;
-
-        --font-title: 3rem;
-        --font-subtitle: 2.2rem;
-        --font-btn-large: 1.2rem;
-
-        --font-h2: 1.8rem;
-        --font-h3: 1.1rem;
-        --font-small: .85rem;
-
+        --pd-box-sm: 70px 136px; 
         --pd-tb-box-sm: 70px;
         --pd-tb-box-md: 100px;
         --pd-lr-box-md: 136px;
 
     }
-}
+} */

@@ -19,10 +19,10 @@
         flex-direction: column;
     }
 
-    .urb_qs-img {
+ /*    .urb_qs-img {
         width: 100%;
         height: 120px;
-    }
+    } */
 
     h3,
     h2 {
@@ -67,7 +67,7 @@
     }
 
     a>i {
-        font-size: 2rem;
+       /*  font-size: 2rem; */
     }
 
     .nst_card-content {
@@ -327,7 +327,7 @@
     .listItem {
         color: white;
         text-decoration: none;
-        font-size: 18px;
+       /*  font-size: 18px; */
     }
 }
 
@@ -338,10 +338,10 @@
 @media (min-width: 992px) {
 
     /* Section 1 */
-    .urb_qs-img {
+    /* .urb_qs-img {
         width: 320px;
         height: 250px;
-    }
+    } */
 
     /* Section 2 */
     .nst_card-item {
@@ -367,11 +367,7 @@
         background: none;
         flex-direction: row;
     }
-
-    .urb_nav-list {
-        display: flex;
-        gap: 20px;
-    }
+ 
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -381,10 +377,10 @@
 @media (min-width: 1400px) {
 
     /* Nosotros */
-    .urb_qs-img {
+   /*  .urb_qs-img {
         width: 511px;
         height: 292.053px;
-    }
+    } */
 
     .nst_card-item {
         width: 320px;

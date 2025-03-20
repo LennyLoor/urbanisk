@@ -34,7 +34,7 @@ class listProjects extends HTMLElement {
         this.innerHTML = filteredProjects.map((data_) => {
             return ` 
                 <div class="exp_card">
-                    <div class="exp-image ${data_.id}-img no-select">
+                    <div class="exp-image img-${data_.id} no-select">
                         <img width="300" src="${data_.image}" alt="${data_.name}">
                     </div>
                     <div class="exp-content">

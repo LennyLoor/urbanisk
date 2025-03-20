@@ -4,6 +4,10 @@
     background-color: var(--bg-section);
 }
 
+section {
+    position: relative;
+}
+
 /* ------------------------
         INICIO
 -------------------------*/
@@ -28,17 +32,18 @@
 
 /* SLIDER */
 .urb_home_slider {
+    overflow: hidden;
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    overflow: hidden;
 }
 
 .urb_home_slider img {
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
 .overlay_slider {
@@ -46,30 +51,38 @@
     height: 100vh;
     position: absolute;
     background: rgba(0, 0, 0, 0.80);
-    backdrop-filter: blur(3.5px);
+    backdrop-filter: blur(2px);
+    filter: grayscale(1);
 }
 
 /* ------------------------
         NOSOTROS
 -------------------------*/
 .urb_qs {
-    padding: var(--pd-tb-box-md) var(--pd-lr-box-md);
+    padding: var(--qs-pd-box);
     display: flex;
     gap: 48px;
 }
 
 .urb_qs-img {
-    background-color: var(--color-gray-500);
+    position: absolute;
+    left: 0;
+    width: 500px;
+    height: 100%;
     background-image: var(--img-qs);
     background-position: center;
-    aspect-ratio: 511.00/292.05;
-    border-radius: 0px 54px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .urb_qs-content {
     display: flex;
     gap: 16px;
     flex-direction: column;
+}
+
+.urb_qs-content h2 {
+    text-align: left;
 }
 
 /* ------------------------
@@ -92,10 +105,15 @@
 /* ------------------------
         PRODUCTOS
 -------------------------*/
+.section_prd .urb_box-title {
+    width: var(--width-prod);
+}
+
 .urb_box-prod {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: var(--width-prod);
 }
 
 .prod_card {
@@ -105,17 +123,13 @@
     border: 0.5px solid var(--color-gray-100);
 }
 
-.prod_card ul {
-    padding: 1rem;
-}
-
 .prod-image {
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    width: 13.6875rem;
-    height: auto;
+    width: 300px;
+    /* height: 284px; */
+    background-position: 12% 10%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -136,6 +150,18 @@
     background-image: var(--img-bg-kantan);
 }
 
+.prod-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.prod-content b {
+    font-weight: 900;
+    color: var(--color-primary);
+}
+
 /* ------------------------
        EQUIPO
 -------------------------*/
@@ -147,8 +173,23 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    position: relative;
 }
-
+.overlay_nst{
+    background-image: var(--img-overlay-nst);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    opacity: .2;
+}
+.nst_title{
+    z-index: 2;
+}
 .urb_nst_title .urb_title {
     color: var(--color-secundary-300);
 }
@@ -222,13 +263,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
 }
 
 .item_content-info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4px;
+    text-align: center;
 }
 
 .item_content-info .info-name {
@@ -241,9 +284,11 @@
 }
 
 .item_content-footer i {
-    color: var(--color-primary);
+    color: var(--color-primary); 
 }
-
+.item_content-footer a{
+    font-size: 1.5rem;
+}
 .item_content-footer {
     gap: 16px;
 }
@@ -262,23 +307,27 @@
     overflow: hidden;
 }
 
+.nst_sidebar h2{
+    font-size: 1rem;
+}
+
 .nst_sidebar-content {
     color: var(--color-text);
-    padding: 64px 32px;
+    padding: 32px 32px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 120px);
     overflow: auto;
     position: relative;
 }
 
 #sidebar_ext .nst_sidebar-content {
     height: 100vh;
-    padding: 64px 32px;
-    height: calc(100vh - 120px);
+    padding: 32px;
+    height: calc(100vh - 60px);
 }
 
 
@@ -291,7 +340,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
 }
 
 .content-info p {
@@ -301,7 +350,7 @@
 
 .info-footer {
     width: calc(100% - 72px);
-    padding: 24px 32px;
+    padding: 16px 32px 32px 32px;
     position: sticky;
     left: 0;
     bottom: 0;
@@ -313,8 +362,10 @@
 }
 
 .card-detalle {
+    font-size: 14px;
+    line-height: 20px;
     border-radius: 4px;
-    padding: 8px 16px;
+    padding: 8px 16px; 
     background-color: var(--color-primary-50)
 }
 
@@ -392,21 +443,44 @@
     align-self: stretch;
     background-color: white;
     border-radius: 4px;
-    height: 280px;
+    height: auto;
+    width: 800px;
+    margin: 0 auto;
+    flex-direction: column;
 }
 
 .exp-image {
-    height: 100%;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .exp-image img {
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     align-self: stretch;
     border-radius: 4px 0 0 4px;
     object-fit: cover;
+    object-position: 50% 14%;
+}
+
+.img-1 img {
+    object-position: 50% 52%;
+}
+
+.img-2 img {
+    object-position: 50% 27%;
+}
+
+.img-3 img {
+    object-position: 50% 8%;
+}
+
+.img-4 img {
+    object-position: 62% 42%;
 }
 
 .exp-content {
@@ -415,7 +489,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 8px;
+    gap: 16px;
     flex: 1 0 0;
     align-self: stretch;
     height: auto;
@@ -510,11 +584,11 @@
     display: flex;
     gap: 48px;
     animation: scroll 15s linear infinite;
+    align-items: center;
 }
 
 .urb_ali-images img {
-    width: auto;
-    height: 80px;
+    height: min-content;
 }
 
 @keyframes scroll {
@@ -532,12 +606,16 @@
 -------------------------*/
 .overlay-contact {
     background-image: var(--img-overlay-contact);
-    width: 50%;
-    height: 100%;
-    background-position: right;
+    background-position: 0% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%; 
     position: absolute;
     left: 0;
     top: 0;
+    opacity: .07;
+    transform: scaleX(-1);
 }
 
 .urb_cont {
@@ -560,8 +638,9 @@
 }
 
 .urb_cont p,
-small {
-    color: var(--color-white-opacity-50);
+small,
+label {
+    color: var(--color-white-opacity-50) !important;
 }
 
 .urb_cont a {

@@ -6,11 +6,10 @@ export var dataJSON = `{
             "tag": "ep",
             "image": "./assets/image/nst_1.webp",
             "name": "ALDO RÍOS MORANTE",
-            "cargo": "Gerente General de Urbanistik S.A.",
-            "detalle": "Arquitecto – Máster en Administración de Empresas",
-            "cardDetalle": "Máster en Políticas de Suelo y Desarrollo Urbano Sostenible – Máster Internacional en BIM (Building Information Modeling) Management",
-            "info": "Con más de veinte años de experiencia profesional en gestión de proyectos, ha liderado eficientemente proyectos de planificación, gestión y ejecución de obras de construcción urbanística en el sector público y privado. Su experiencia incluye la supervisión de todas las etapas de construcción, asegurando el cumplimiento de estándares internacionales de calidad y plazos establecidos. Ha asesorado durante diez años en la formulación de planes de desarrollo y ordenamiento territorial, liderando equipos multidisciplinarios en la elaboración de estrategias y políticas para el desarrollo sostenible. Ha participado como consultor externo para el Banco Interamericano de Desarrollo BID y ha liderado proyectos de infraestructura educativa en Ecuador, optimizando recursos técnicos y financieros. Su experiencia en la función pública incluye la Dirección de Desarrollo, la Gerencia de Proyectos del Servicio de Gestión Inmobiliaria del Sector Público INMOBILIAR y la ejecución de proyectos de infraestructura urbana y rural. Facilitador experto y capacitador a profesionales y organizaciones, con trayectoria en empresas privadas e instituciones educativas.",
-            "linkedIn": "https://learning.linkedin.com/"
+            "cargo": "CEO de Urbanistik S.A.", 
+            "cardDetalle": "Arquitecto <br> Máster en Administración de Empresas <br> Máster en Políticas de Suelo y Desarrollo Urbano Sostenible <br> Máster Internacional en BIM (Building Information Modeling) Management",
+            "info": "Profesional con más de 20 años de experiencia en gestión de proyectos. Ha liderado proyectos de planificación, gestión y ejecución de obras de construcción y desarrollo inmobiliario en el sector público y privado. Ha asesorado en planes de ordenamiento territorial y gestión del suelo, liderando equipos multidisciplinarios. Ha trabajado con instituciones internacionales como el BID y ha ocupado cargos en la función pública. Es un facilitador experto y capacitador de profesionales y organizaciones.",
+            "linkedIn": "https://www.linkedin.com/in/aldo-rios-morante-98843611/"
         },
         {
             "id": "2", 
@@ -18,11 +17,10 @@ export var dataJSON = `{
             "tag": "ep",
             "image": "./assets/image/nst_2.webp",
             "name": "JOSÉ NEIRA RIZZO",
-            "cargo": "Asesor Legal y Urbanístico",
-            "detalle": "Arquitecto – Máster of Science in Community and Regional Planning",
-            "cardDetalle": "Arquitecto – Master of Science in Community and Regional Planning Abogado – Máster en Derecho Administrativo",
-            "info": "Con una trayectoria profesional que se remonta a 1978, el arquitecto ha desarrollado una destacada carrera en planificación territorial y desarrollo urbanístico. Ha ocupado cargos clave como Director del Departamento de Planeamiento Urbanístico de la Municipalidad de Guayaquil y ha liderado importantes proyectos de diseño urbanísticos en la ciudad de Guayaquil y Durán. Además de su experiencia en la función pública, ha desarrollado una amplia labor como consultor, elaborando Planes de Desarrollo y Ordenamiento Territorial, Planes de Uso y Gestión del Suelo y proyectos de ley en áreas como el derecho al hábitat y la vivienda. También ha sido profesor universitario y ha impartido cátedras de urbanismo y derecho administrativo. Es autor de varias publicaciones especializadas en planificación territorial, desarrollo urbanístico y derecho urbano, destacando títulos como 'La planificación territorial, desarrollo urbanístico y derecho urbano' y 'Panorama normativo sobre el marco normativo en materia de planificación del desarrollo y ordenamiento territorial en el Ecuador'. Su producción académica y profesional lo convierte en un referente en su campo.",
-            "linkedIn": "https://learning.linkedin.com/"
+            "cargo": "Asesor legal y urbanístico", 
+            "cardDetalle": "Arquitecto – Abogado <br> Master of Science in Community and Regional Planning <br> Máster en Derecho Administrativo",
+            "info": "Posee una trayectoria profesional de más de 40 años, especializado en planificación territorial y desarrollo urbanístico. Ha ocupado cargos en la función pública, como Director del Departamento de Planeamiento Urbanístico de la Municipalidad de Guayaquil, y ha liderado proyectos de diseño urbanístico en Guayaquil y Durán. Ha trabajado como consultor, elaborando planes de desarrollo y ordenamiento territorial, y ha sido profesor universitario de urbanismo y derecho administrativo. Además, es autor de varias publicaciones especializadas en derecho urbano.",
+            "linkedIn": "https://www.linkedin.com/in/josé-neira-rizzo-7368a6a/"
         },
         {
             "id": "3", 
@@ -30,9 +28,9 @@ export var dataJSON = `{
             "tag": "ext",
             "image": "./assets/image/nst_3.webp",
             "name": "KARLA PAEZ CHAVEZ",
-            "cargo": "Arquitecta",
-            "detalle": "Magíster en Impactos Ambientales", 
-            "info": "Como Magíster en Impactos Ambientales, graduada con mención de honor por mejor promedio de la Universidad de Guayaquil, Facultad de Arquitectura y Urbanismo, cuenta con una sólida formación académica. Su experiencia como Arquitecta, también obtenida en la Universidad de Guayaquil, le ha brindado una base sólida en las áreas de urbanismo, planeamiento y catastro. Con amplia experiencia en el sector público, ha desarrollado habilidades en la elaboración, evaluación y seguimiento de planes de desarrollo y ordenamiento territorial, proyectos de legalización, actualización catastral y autorizaciones de proyectos urbanísticos. Además, ha trabajado en proyectos de mejora de gestión de desechos sólidos no peligrosos con GADs municipales y en la elaboración de estudios y desarrollo de proyectos relacionados con planes de manejo ambiental y manejo de desechos sólidos no peligrosos. Posee un excelente manejo de la normativa relacionada, lo que le permite llevar a cabo sus responsabilidades con eficiencia y efectividad." 
+            "cargo": "Especialista en Gestión Ambiental ", 
+            "cardDetalle": "Arquitecto - Máster en Impacto Ambientales", 
+            "info": "Mención de honor por la Universidad de Guayaquil. Profesional con experiencia en urbanismo, planeamiento y catastro. Ha trabajado en el sector público en planes de desarrollo, ordenamiento territorial, legalización, catastro y proyectos urbanísticos. También ha participado en proyectos de gestión de desechos sólidos y planes de manejo ambiental. Domina la normativa ambiental y tiene habilidades en evaluación, seguimiento y elaboración de proyectos." 
         },
         {
             "id": "4", 
@@ -40,10 +38,9 @@ export var dataJSON = `{
             "tag": "ext",
             "image": "./assets/image/nst_4.webp",
             "name": "ALVARO VALLADARES CARRILLO",
-            "cargo": "Arquitecto",
-            "detalle": "Magíster en Ordenamiento Territorial",
-            "cardDetalle": "",
-            "info": "Con una trayectoria profesional de más de 25 años, su formación como arquitecto y su Maestría en Ordenamiento Territorial lo han capacitado para abordar proyectos que requieren una comprensión integral del territorio y su gestión sostenible. Su experiencia en la investigación y publicación sobre arquitectura y patrimonio también destaca su compromiso con la preservación del patrimonio cultural y la promoción del desarrollo sostenible. En el período comprendido entre 2021 y 2023, se desempeñó como Fiscalizador de Proyecto en el GAD Municipal de Santa Lucía, donde participó en el fortalecimiento de las capacidades institucionales para la gestión patrimonial. Asimismo, ejerció como Consultor-Director de Proyecto en la elaboración del Plan de Desarrollo y Ordenamiento Territorial (PDOT) Cantonal y del Plan de Uso y Gestión de Suelo (PUGS) para diversas municipalidades ecuatorianas. Su experiencia también incluye la dirección de proyectos de construcción, como el Polideportivo del Cantón Baba. Además, ha desarrollado su expertise en la evaluación de bienes inmuebles como Perito Evaluador en la Función Judicial." 
+            "cargo": "Especialista en Planificación Territorial",  
+            "cardDetalle": "Arquitecto - Magíster en Ordenamiento Territorial", 
+            "info": "Profesional con experiencia en la dirección de proyectos de construcción, elaboración de planes de desarrollo y ordenamiento territorial, y planes de uso y gestión del suelo. Ha investigado y publicado sobre arquitectura y patrimonio, demostrando su compromiso con la preservación del patrimonio cultural y el desarrollo sostenible. Perito Valuador de bienes inmuebles calificado de la Función Judicial." 
         },
         {
             "id": "5", 
@@ -51,10 +48,9 @@ export var dataJSON = `{
             "tag": "ext",
             "image": "./assets/image/nst_5.webp",
             "name": "ISABEL ARMIJOS CARVAJAL",
-            "cargo": "Licenciada en Ciencias de la Educación, especialidad Comercio y Administración",
-            "detalle": "Magíster en Gestión de Proyectos Socio Productivos",
-            "cardDetalle": "",
-            "info": "Magíster en Gestión de Proyectos Socio Productivos, con 18 años de experiencia profesional en ejecución de proyectos, evaluación de riesgos y estructura de modelos económicos para Proyectos de Desarrollo Social Sostenible, financiados con recursos internos y/o externos aplicados a la implementación de infraestructura turística en áreas protegidas, infraestructura social y procesos de mejoramiento de la calidad del servicio. Entre su experiencia relevante tenemos que colaboró como Consultor Externo para el Banco Interamericano de Desarrollo BID, Gerente y Coordinador de los Programas BID y Banco Mundial para el Ministerio de Educación, Coordinadora de Inversiones Turísticas para Galápagos en el Ministerio de Turismo y Administradora General de entidades privadas. Por otra parte, para el sector privado se desempeña como Especialista para la estructura de modelos financieros para una Concesión Público Privada." 
+            "cargo": "Especialista Proyectos y Finanzas",  
+            "cardDetalle": "Licenciada en Ciencias de la Educación, especialidad Comercio y Administración - Magíster en Gestión de Proyectos Socio Productivos", 
+            "info": "Profesional con experiencia en ejecución de proyectos, evaluación de riesgos y modelos económicos para proyectos de desarrollo social sostenible. Ha trabajado como consultora externa para el BID, Gerente de programas para el Ministerio de Educación y Coordinadora de inversiones turísticas para Galápagos. Actualmente se desempeña como Especialista en modelos financieros para concesiones público-privadas." 
         },
         {
             "id": "6", 
@@ -62,10 +58,9 @@ export var dataJSON = `{
             "tag": "ext",
             "image": "./assets/image/nst_6.webp",
             "name": "ENRIQUE CAMPOS MENA",
-            "cargo": "Contador Público Autorizado",
-            "detalle": "MBA con mención en Sostenibilidad de Sectores",
-            "cardDetalle": "",
-            "info": "Profesional con más de 15 años de experiencia en el ámbito de la consultoría, planificación territorial, y análisis espacial, he desarrollado una sólida carrera en el sector público y privado. A lo largo de la carrera, ha liderado y coordinado múltiples proyectos en áreas de regularización de tierras, elaboración de planes de desarrollo y ordenamiento territorial, así como la implementación de sistemas de información geográfica (SIG) en diversas instituciones y organismos. Su experiencia profesional se ha centrado en la gestión de proyectos de regularización territorial y urbanística, trabajando estrechamente con municipalidades y organismos gubernamentales. Ha sido responsable de la planificación y coordinación de procesos complejos, incluyendo levantamientos de información física, social y legal, elaboración de cartografía catastral, y la supervisión de equipos técnicos. Ha dirigido procesos de capacitación y asesoramiento en análisis espacial y manejo de datos geográficos, optimizando la gestión de información territorial y contribuyendo a la mejora de políticas públicas." 
+            "cargo": "Especialista en Gestión del Territorio",  
+            "cardDetalle": "Contador Público Autorizado | Máster en Administración de Empresas con mención en Sostenibilidad de Sectores", 
+            "info": "Profesional con experiencia en consultoría, planificación territorial y análisis espacial. Ha liderado proyectos de regularización de tierras, planes de desarrollo y sistemas de información geográfica (SIG). Su experiencia se centra en gestión de proyectos territoriales y urbanísticos, trabajando con municipalidades y organismos gubernamentales. Ha dirigido procesos de capacitación y asesoramiento en análisis espacial y manejo de datos geográficos." 
         },
         {
             "id": "7", 
@@ -73,10 +68,9 @@ export var dataJSON = `{
             "tag": "ext",
             "image": "./assets/image/nst_7.webp",
             "name": "DANIEL TOBALINA DITO",
-            "cargo": "Ingeniero Ambiental",
-            "detalle": "Magíster en Tecnologías de la Información Geográfica: SIG y Teledetección",
-            "cardDetalle": "",
-            "info": "Su experiencia profesional se centra en la gestión del territorio y los recursos naturales desde una perspectiva tecnológica, abarcando tanto el sector privado como público. Ha trabajado en proyectos de Catastro Urbano multifinalitario, destacándose como experto en Procesamiento de Información Geográfica y aplicando estándares nacionales e internacionales. Ha participado como parte del equipo consultor en Planes de Desarrollo Territorial y Ordenamiento Territorial, asesoramiento en Location Intelligence, y trabajo en consultoras ambientales, aplicando conocimientos en procesamiento geográfico para estudios de impacto ambiental. Actualmente, se desempeña en el sector hídrico, aportando conocimiento técnico-científico en la gestión comercial del recurso hídrico para promover una gestión sostenible." 
+            "cargo": "Especialista en Información Geográfica",  
+            "cardDetalle": "Ingeniero Ambiental | Magíster en Tecnologías de la Información Geográfica", 
+            "info": "Profesional con experiencia en gestión territorial y recursos naturales, con enfoque tecnológico en sectores público y privado. Experto en Procesamiento de Información Geográfica, Catastro Urbano y Ordenamiento Territorial. Ha trabajado en consultorías ambientales y actualmente se desempeña en el sector hídrico, promoviendo gestión sostenible del recurso hídrico." 
         },
         {
             "id": "8", 
@@ -84,10 +78,9 @@ export var dataJSON = `{
             "tag": "ext",
             "image": "./assets/image/nst_8.webp",
             "name": "Diana Mindiola Robayo",
-            "cargo": "Ingeniera Civil",
-            "detalle": "Especialista Hidrosanitaria",
-            "cardDetalle": "",
-            "info": "Ingeniera Civil especializada en Hidrosanitaria y Sistemas contra Incendios, con una sólida trayectoria en consultoría y coordinación de proyectos hidrosanitarios. Su experiencia abarca el diseño, planificación y ejecución de soluciones eficientes para equipamientos tanto públicos como privados, garantizando la seguridad, calidad y cumplimiento normativo. A lo largo de su carrera, ha ocupado cargos de alto nivel, destacándose como Directora Técnica de empresas públicas municipales. Además, ha participado como consultora en proyectos de ordenamiento territorial y uso del suelo para diversas municipalidades, contribuyendo al desarrollo urbano sostenible" 
+            "cargo": "Especialista Hidrosanitaria",  
+            "cardDetalle": "Ingeniera Civil | Especialidad Hidrosanitaria y Sistemas Contra Incendios", 
+            "info": "Profesional con trayectoria en consultoría y coordinación de proyectos hidrosanitarios. Diseña y ejecuta soluciones eficientes para equipamientos públicos y privados, garantizando seguridad, calidad y cumplimiento normativo. Ha ocupado cargos directivos en empresas públicas y ha sido consultora de infraestructura hidrosanitaria en proyectos de ordenamiento territorial y uso del suelo para municipalidades, promoviendo desarrollo urbano sostenible." 
         }
     ],
     "servicios": [
@@ -97,72 +90,72 @@ export var dataJSON = `{
             "image": "./assets/image/planificacion-territorial.webp",
             "title": "Planificación Territorial y Gestión del Suelo",
             "detalle": "Ofrecemos soluciones integrales para promover el desarrollo sostenible y equitativo delos territorios, mediante la elaboración de planes de ordenamiento territorial, estrategias para la gestión eficiente del suelo y la conservación ambiental, además de asesoría en planificación estratégica y políticas públicas.",
-            "beneficios": "<ul class='card_back-list'><li>Elaboración de Planes de Desarrollo y Ordenamiento Territorial (PDOT) y Planes de Uso y Gestión del Suelo (PUGS).</li><li>Desarrollo de planes maestros, planes parciales y planes de implantación urbanística.</li><li>Evaluación y análisis de instrumentos de planificación territorial.</li><li>Asesoría en procesos de legalización de asentamientos humanos.</li><li>Elaboración y revisión de normativas de regulación urbanística y control de construcción.</li><li>Gestión de suelo para proyectos de desarrollo urbano.</li><li>Modelos de crecimiento urbano y prospectiva territorial.</li><li>Georreferenciación y análisis espacial con SIG (Sistemas de Información Geográfica).</li><li>Participación ciudadana en procesos de planificación.</li></ul>"
+            "beneficios": "<ul><li>Elaboración de Planes de Desarrollo y Ordenamiento Territorial (PDOT) y Planes de Uso y Gestión del Suelo (PUGS).</li><li>Desarrollo de planes maestros, planes parciales y planes de implantación urbanística.</li><li>Evaluación y análisis de instrumentos de planificación territorial.</li><li>Asesoría en procesos de legalización de asentamientos humanos.</li><li>Elaboración y revisión de normativas de regulación urbanística y control de construcción.</li><li>Gestión de suelo para proyectos de desarrollo urbano.</li><li>Modelos de crecimiento urbano y prospectiva territorial.</li><li>Georreferenciación y análisis espacial con SIG (Sistemas de Información Geográfica).</li><li>Participación ciudadana en procesos de planificación.</li></ul>"
 
         }, 
         {
             "id": "2",  
             "bg": "transparent",
             "image": "./assets/image/Arquitectura.webp",
-            "title": "Arquitectura y Urbanismo",
+            "title": "Arquitectura, ingeniería y urbanismo",
             "detalle": "Desarrollamos proyectos arquitectónicos, estudios de ingeniería, diseño urbanístico y planes de renovación urbana. Implementamos tecnología avanzada como Building Information Modeling (BIM) para optimizar procesos en la industria de la construcción y la ingeniería. Además, brindamos servicios de tasación y avalúos inmobiliarios, garantizando un análisis preciso y confiable.",
-            "beneficios": "<ul class='card_back-list'><li>Implementación de Metodología BIM (Building Information Modeling).</li><li>Integración de BIM con GIS (Sistemas de Información Geográfica).</li><li>Diseño y Desarrollo de Planes Maestros Urbanos.</li><li>Diseño de Espacios Públicos y Equipamientos Urbanos.</li><li>Proyectos de Desarrollo Inmobiliario.</li><li>Diseño Arquitectónico y Estudios de Ingenierías.</li><li>Supervisión e Inspección Técnica de Obras.</li><li>Visualización Arquitectónica 3D y Renderización.</li><li>Servicios de Topografía y Georreferenciación con Tecnología Avanzada.</li></ul>"
+            "beneficios": "<ul><li>Asesoramiento y consultoría en arquitectura y urbanismo.</li><li>Diseño y estudio integral de espacios públicos y equipamientos urbanos.</li><li>Diseño Arquitectónico Integral con BIM (Building Information Modeling).</li><li>Creación de modelos digitales detallados para proyectos de construcción, integrando diseño, ingeniería y planificación en un solo proceso colaborativo.</li><li>Elaboración de planes maestros y diseños urbanos.</li><li>Implementación de SIG (Sistemas de Información Geográfica) para analizar y visualizar datos geoespaciales, optimizar la planificación y diseño urbano.</li><li>Levantamientos topográficos y georreferenciación avanzada y vuelos de dron.</li><li>Tasación y Avalúos de bienes inmuebles.</li></ul>"
         }, 
         {
             "id": "3",  
             "bg": "transparent",
             "image": "./assets/image/Gestion-de-proyectos.webp",
-            "title": "Gestión de Proyectos",
-            "detalle": "Brindamos servicios especializados en la administración de proyectos públicos, privados y de Asociaciones Público-Privadas (APP), abarcando diversas áreas como proyectos productivos, de construcción, inmobiliarios, comunitarios, así como supervisión y fiscalización de obras civiles. Nuestro enfoque garantiza una gestión eficiente en cada etapa del proyecto, asegurando calidad, cumplimiento normativo y optimización de recursos.",
-            "beneficios": "<ul class='card_back-list'><li>Planificación, Administración, Seguimiento y Evaluación de Proyectos con metodología PMI.</li><li>Asesoría en Contratación y Licitaciones para el sector público y privado.</li><li>Supervisión Técnica y Control de Ejecución de obras y proyectos.</li><li>Gestión de Calidad y Seguridad en la Construcción.</li><li>Asesoría en Proyectos Productivos y Comunitarios.</li><li>Gestión de Asociaciones Público-Privadas (APP).</li><li>Diseño e Implementación de Sistemas de Gestión ISO.</li></ul>"
+            "title": "Gestión y supervisión de proyectos",
+            "detalle": "Brindamos servicios especializados en la gestión integral de proyectos públicos, privados y de Asociaciones Público-Privadas (APP), cubriendo áreas como proyectos productivos, comunitarios, de construcción, inmobiliarios y de gestión ambiental. Realizamos la supervisión y fiscalización de obras civiles, asegurando el cumplimiento de los planos, especificaciones y normas técnicas, y garantizando la optimización de recursos.",
+            "beneficios": "<ul><li>Planificación, administración, seguimiento y evaluación de proyectos con metodología PMI.</li><li>Diseño e implementación de sistemas integrados de gestión según las normas ISO.</li><li>Auditorías y evaluaciones periódicas de proyectos para garantizar el cumplimiento de normas y regulaciones técnicas, financieras y ambientales.</li><li>Asesoría para el sector público y privado en procesos de contratación y licitaciones.</li><li>Supervisión técnica y control de ejecución de obras y proyectos.</li><li>Gestión de calidad e implementación de planes de calidad y seguridad para proyectos de construcción.</li><li>Desarrollo de planes de negocio y modelos de sostenibilidad para proyectos productivos y comunitarios.</li><li>Gestión y asesoría en la estructuración y modelos de gestión de asociaciones público-privadas (APP).</li><li>Asesoría y desarrollo de planes de gestión integral para el cumplimiento de regulaciones y la obtención de permisos y licencias ambientales, gestión de residuos y materiales peligrosos.</li></ul>"
         }, 
         {
             "id": "4",  
             "bg": "white",
             "image": "./assets/image/Formación.webp",
             "title": "Formación y certificación profesional",
-            "detalle": "Ofrecemos programas de capacitación especializados en la industria de la construcción y el desarrollo territorial, respaldados por el Ministerio de Trabajo. Nuestros cursos están diseñados para potenciar las habilidades técnicas y estratégicas de los profesionales del sector, brindándoles las herramientas necesarias para afrontar con confianza y eficiencia los desafíos del mercado.",
-            "beneficios": "<ul class='card_back-list'><li>Fiscalización de Obras y Contratos de Construcción.</li><li>Supervisión y Residencia de Obras.</li><li>Dirección y Administración de Empresas de Construcción.</li><li>Formulación y Evaluación de Proyectos de Construcción.</li><li>Ordenamiento Territorial y Gestión del Suelo.</li><li>Gestión Ambiental mediante el Uso del Sistema QGIS I.</li><li>Gestión Ambiental mediante el Uso del Sistema QGIS II.</li></ul>"
+            "detalle": "Ofrecemos programas de capacitación especializados en la industria de la construcción y el desarrollo territorial, respaldados por el Ministerio de Trabajo. Nuestros cursos están diseñados para potenciar las habilidades técnicas y estratégicas de los profesionales del sector, brindándoles las herramientas necesarias para afrontar con confianza y eficiencia los desafíos del mercado laboral.",
+            "beneficios": "<ul class='card_back-list'><li>Fiscalización de Obras y Contratos de Construcción.</li><li>Supervisión y Residencia de Obras.</li><li>Dirección y Administración de Empresas de Construcción.</li><li>Formulación y Evaluación de Proyectos de Construcción.</li><li>Ordenamiento Territorial y Gestión del Suelo.</li><li>Gestión Ambiental mediante el Uso del Sistema QGIS I.</li><li>Gestión Ambiental mediante el Uso del Sistema QGIS II.</li><li>Gestión Ambiental mediante el Uso del Sistema QGIS III.</li></ul>"
         } 
     ],
     "productos": [
         {
             "id": "1",  
-            "producto": "o4B",
-            "image": "./assets/image/producto_1_logo.webp", 
-            "beneficios": "<ul class='list'><li>Cuenta con todo lo necesario para cubrir los procesos y necesidades que presenta el sector construcción. Facilita el control del presupuesto y el costo real del proyecto, el avance y la programación de las obras, los ingresos estimados y reales del proyecto.</li><li>Permite que su empresa avance en transformación digital, ofreciendo las bases requeridas para que sus transacciones, en todas las áreas de su empresa, se integren y administren en O4Bi de forma sencilla, eficiente y eficaz.</li></ul>"
+            "producto": "o4B", 
+            "title": "<b> O4Bi | </b> Software para la construcción",
+            "beneficios": "Cuenta con todo lo necesario para cubrir los procesos y necesidades que presenta el sector construcción. Facilita el control del presupuesto y el costo real del proyecto, el avance y la programación de las obras, los ingresos estimados y reales del proyecto. Permite que su empresa avance en transformación digital, ofreciendo las bases requeridas para que sus transacciones, en todas las áreas de su empresa, se integren y administren en O4Bi de forma sencilla, eficiente y eficaz."
         },
          {
             "id": "1",  
-            "producto": "kantan",
-            "image": "./assets/image/producto_2_logo.webp", 
-            "beneficios": "<ul class='list'><li>Estandariza los procesos y favorece la consistencia en la implementación de las normas, minimizando errores y no conformidades, y ayudando a corregirlas de manera más rápida.</li><li>Centraliza los procesos y actividades relacionadas con la calidad, el medio ambiente, la salud y la seguridad ocupacional, y la seguridad de la información, proporcionando mayor transparencia y visibilidad, y ayudando a construir confianza, tanto interna como externamente.</li></ul>"
+            "producto": "kantan", 
+            "title": "<b> Kantan | </b> Software Normas ISO",
+            "beneficios": "Estandariza los procesos y favorece la consistencia en la implementación de las normas, minimizando errores y no conformidades, y ayudando a corregirlas de manera más rápida. Centraliza los procesos y actividades relacionadas con la calidad, el medio ambiente, la salud y la seguridad ocupacional, y la seguridad de la información, proporcionando mayor transparencia y visibilidad, y ayudando a construir confianza, tanto interna como externamente."
         }
     ],
     "proyectos": [
         { 
             "id": "1",
             "name": "Planificación Territorial y Gestión del Suelo", 
-            "image": "./assets/image/image_5.webp", 
-            "detalle": "<ul class='list'><li>Planes de Uso y Gestión del Suelo en los GAD Municipales de Daule, Jaramijó, Las Lajas y Shushufindi.</li><li>Plan de legalización de asentamientos humanos en Durán, Daule, Huaquillas y el sector Monte Sinaí de Guayaquil.</li><li>Plan de desarrollo urbano de la Parroquia Urbana Satélite La Aurora del cantón Daule.</li></ul>"
+            "image": "./assets/image/exp-1.webp", 
+            "detalle": "<ul class='list txt-secundary'><li>Planes de Desarrollo y Ordenamiento Territorial (PDOT): para los GAD Municipales de Daule, Montecristi, El Triunfo, Jaramijó, Santa Elena, Salinas, Quevedo y Shushufindi.</li><li>Planes de Uso y Gestión del Suelo (PUGS): para los GAD Municipales de Daule, Jaramijó, Las Lajas y Shushufindi.</li><li>Plan de legalización de asentamientos humanos en Durán, Daule, Huaquillas y el sector Monte Sinaí de Guayaquil.</li><li>Plan de desarrollo urbano de la Parroquia Urbana Satélite La Aurora del cantón Daule.</li><li>Plan Parcial y proyecto de regularización del Hospital de SOLCA de Guayaquil.</li><li>Planes Parciales para proyectos de desarrollo urbanístico.</li><li>Propuestas de normativas que regulen el control de edificaciones y el uso de suelo.</li></ul>"
         },   
         { 
             "id": "2",
-            "name": "Arquitectura y Urbanismo", 
-            "image": "./assets/image/image_2.webp", 
-            "detalle": "<ul class='list'><li>Terminal Terrestre para el cantón Gualaceo en la provincia del Azuay</li><li>Estandarizadas San Miguel y Lumbaqui</li><li>Asesoría técnica en los Estudios y Diseño del Malecón de la ciudad de Babahoyo</li><li>Diseños integral de departamentos en General Villamil, Playas</li><li>Diseño de proyecto residencial en Gualaceo y Playas</li><li>Diseños integral de departamentos en General Villamil, Playas</li><li>Diseño de proyecto residencial en Gualaceo y Playas</li><li>Diseño de anteproyecto de hotel en Salinas</li></ul>"
+            "name": "Arquitectura, ingeniería y urbanismo", 
+            "image": "./assets/image/image_1.webp", 
+            "detalle": "<ul class='list txt-secundary'><li>Diseño de equipamientos de servicio público y privado como Unidades Educativas, Hospitales, Centros de Salud y Unidades de Policía Comunitaria.</li><li>Diseño de parques, áreas verdes y canchas deportivas.</li><li>Estudios del Terminal Terrestre para el cantón Gualaceo.</li><li>Asesoría técnica para el diseño del Malecón Etapa III de la ciudad de Babahoyo.</li><li>Asesoría técnica en Infraestructura de Inversiones Turísticas para el Ministerio de Turismo en Galápagos.</li><li>Diseño de proyectos residenciales, comerciales y hoteleros.</li></ul>"
         }, 
          { 
             "id": "3",
-            "name": "Gestión de Proyectos", 
+            "name": "Gestión y supervisión de proyectos", 
             "image": "./assets/image/image_3.webp", 
-            "detalle": "<ul class='list'><li>Dirección de Obra proyecto urbanístico Vilanova.</li><li>Plan Parcial y proyecto de regularización del Hospital de SOLCA de Guayaquil.</li><li>Consultoría para la Elaboración de las Políticas Nacionales de Parques y Espacios Públicos.</li><li>Gerencia de Proyectos en instituciones privadas.</li><li>Administración de modelos financieros para una Concesión Público Privada.</li></ul>"
+            "detalle": "<ul class='list txt-secundary'><li>Consultoría Integral para Proyectos Urbanísticos y de Infraestructura basados en la Metodología BIM.</li><li>Consultoría para la Elaboración de las Políticas Nacionales de Parques y Espacios Públicos.</li><li>Gerencia de Proyectos para la adquisición de bienes inmuebles para el sector público y privado INMOBILIAR.</li><li>Fiscalización de Obras y Proyectos para instituciones públicas y privadas.</li><li>Administración de Modelos Financieros para una Concesión Público Privada.</li><li>Elaboración de propuestas técnica, especificaciones técnicas y términos de referencia para la construcción o readecuación de infraestructura pública o privada.</li><li>Implementación de sistema de seguimiento y monitoreo del programa de desarrollo en el sector público y privado.</li></ul>"
         },  
         { 
             "id": "4",
             "name": "Formación y certificación profesional", 
-            "image": "./assets/image/image_4.webp", 
-            "detalle": "<ul class='list'><li>Dirección de Obra proyecto urbanístico Vilanova.</li><li>Proyecto de regularización del Hospital de SOLCA de Guayaquil.</li><li>Consultoría para la Elaboración de las Políticas Nacionales de Parques y Espacios Públicos.</li><li>Gerencia de Proyectos en instituciones privadas.</li></ul>"
+            "image": "./assets/image/exp-4.webp", 
+           "detalle": "<ul class='list txt-secundary'><li>Cursos de formación avalados por el Ministerio de Trabajo de Supervisión y Residencia de obras y Fiscalización de Obras y Contratos de Construcción en convenio con el Centro de Formación CECAKS.</li><li>Certificaciones por competencias laborales avaladas por el Ministerio de Trabajo en convenio de MATSSO.</li><li>Cursos de profesionalización en Ordenamiento Territorial y Gestión del Suelo para consultores y técnicos municipales.</li><li>Capacitaciones en avalúos de inmuebles urbanos, técnicas de captación en ventas inmobiliarias.</li><li>Cursos de desarrollo de diseño, ejecución y evaluación de proyectos vinculados a la comunidad, proyectos para emprendedores, emprendimiento y liderazgo.</li><li>Talleres sobre gestión de proyectos para empresas públicas y privadas.</li></ul>"
         }
     ]
 }`;
