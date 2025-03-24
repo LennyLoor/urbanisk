@@ -118,9 +118,10 @@ section {
     text-align: left;
 }
 
-.urb_qs-content button{
+.urb_qs-content button {
     width: max-content;
 }
+
 /* ------------------------
         SERVICIOS
 -------------------------*/
@@ -752,12 +753,22 @@ label {
 .urb_copy {
     display: flex;
     padding: 16px 149px;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 48px;
+    gap: 4px;
     align-self: stretch;
     color: #FFF;
     background: var(--color-gray-800);
     text-align: center;
+}
+
+.urb_copy a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.urb_copy a:hover {
+    color: var(--color-secundary);
+    text-decoration: none;
 }
