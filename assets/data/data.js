@@ -5,9 +5,9 @@ export var dataJSON = `{
             "equipo": "Equipo Principal",
             "tag": "ep",
             "image": "./assets/image/nst_1.webp",
-            "name": "ALDO RÍOS MORANTE",
+            "name": "Aldo Ríos Morante",
             "cargo": "CEO de Urbanistik S.A.", 
-            "cardDetalle": "Arquitecto <br> Máster en Administración de Empresas <br> Máster en Políticas de Suelo y Desarrollo Urbano Sostenible <br> Máster Internacional en BIM (Building Information Modeling) Management",
+            "cardDetalle": "Arquitecto | Máster en Administración de Empresas | Máster en Políticas de Suelo y Desarrollo Urbano Sostenible | Máster Internacional en BIM (Building Information Modeling) Management",
             "info": "Profesional con más de 20 años de experiencia en gestión de proyectos. Ha liderado proyectos de planificación, gestión y ejecución de obras de construcción y desarrollo inmobiliario en el sector público y privado. Ha asesorado en planes de ordenamiento territorial y gestión del suelo, liderando equipos multidisciplinarios. Ha trabajado con instituciones internacionales como el BID y ha ocupado cargos en la función pública. Es un facilitador experto y capacitador de profesionales y organizaciones.",
             "linkedIn": "https://www.linkedin.com/in/aldo-rios-morante-98843611/"
         },
@@ -16,9 +16,9 @@ export var dataJSON = `{
             "equipo": "Equipo Principal",
             "tag": "ep",
             "image": "./assets/image/nst_2.webp",
-            "name": "JOSÉ NEIRA RIZZO",
+            "name": "José Neira Rizzo",
             "cargo": "Asesor legal y urbanístico", 
-            "cardDetalle": "Arquitecto – Abogado <br> Master of Science in Community and Regional Planning <br> Máster en Derecho Administrativo",
+            "cardDetalle": "Arquitecto | Abogado | Master of Science in Community and Regional Planning | Máster en Derecho Administrativo",
             "info": "Posee una trayectoria profesional de más de 40 años, especializado en planificación territorial y desarrollo urbanístico. Ha ocupado cargos en la función pública, como Director del Departamento de Planeamiento Urbanístico de la Municipalidad de Guayaquil, y ha liderado proyectos de diseño urbanístico en Guayaquil y Durán. Ha trabajado como consultor, elaborando planes de desarrollo y ordenamiento territorial, y ha sido profesor universitario de urbanismo y derecho administrativo. Además, es autor de varias publicaciones especializadas en derecho urbano.",
             "linkedIn": "https://www.linkedin.com/in/josé-neira-rizzo-7368a6a/"
         },
@@ -27,7 +27,7 @@ export var dataJSON = `{
             "equipo": "Externo",
             "tag": "ext",
             "image": "./assets/image/nst_3.webp",
-            "name": "KARLA PAEZ CHAVEZ",
+            "name": "Karla Páez Chávez",
             "cargo": "Especialista en Gestión Ambiental ", 
             "cardDetalle": "Arquitecto - Máster en Impacto Ambientales", 
             "info": "Mención de honor por la Universidad de Guayaquil. Profesional con experiencia en urbanismo, planeamiento y catastro. Ha trabajado en el sector público en planes de desarrollo, ordenamiento territorial, legalización, catastro y proyectos urbanísticos. También ha participado en proyectos de gestión de desechos sólidos y planes de manejo ambiental. Domina la normativa ambiental y tiene habilidades en evaluación, seguimiento y elaboración de proyectos." 
@@ -37,7 +37,7 @@ export var dataJSON = `{
             "equipo": "Externo",
             "tag": "ext",
             "image": "./assets/image/nst_4.webp",
-            "name": "ALVARO VALLADARES CARRILLO",
+            "name": "Álvaro Valladares Carrillo",
             "cargo": "Especialista en Planificación Territorial",  
             "cardDetalle": "Arquitecto - Magíster en Ordenamiento Territorial", 
             "info": "Profesional con experiencia en la dirección de proyectos de construcción, elaboración de planes de desarrollo y ordenamiento territorial, y planes de uso y gestión del suelo. Ha investigado y publicado sobre arquitectura y patrimonio, demostrando su compromiso con la preservación del patrimonio cultural y el desarrollo sostenible. Perito Valuador de bienes inmuebles calificado de la Función Judicial." 
@@ -47,7 +47,7 @@ export var dataJSON = `{
             "equipo": "Externo",
             "tag": "ext",
             "image": "./assets/image/nst_5.webp",
-            "name": "ISABEL ARMIJOS CARVAJAL",
+            "name": "Isabel Armijos Carvajal",
             "cargo": "Especialista Proyectos y Finanzas",  
             "cardDetalle": "Licenciada en Ciencias de la Educación, especialidad Comercio y Administración - Magíster en Gestión de Proyectos Socio Productivos", 
             "info": "Profesional con experiencia en ejecución de proyectos, evaluación de riesgos y modelos económicos para proyectos de desarrollo social sostenible. Ha trabajado como consultora externa para el BID, Gerente de programas para el Ministerio de Educación y Coordinadora de inversiones turísticas para Galápagos. Actualmente se desempeña como Especialista en modelos financieros para concesiones público-privadas." 
@@ -57,7 +57,7 @@ export var dataJSON = `{
             "equipo": "Externo",
             "tag": "ext",
             "image": "./assets/image/nst_6.webp",
-            "name": "ENRIQUE CAMPOS MENA",
+            "name": "Enrique Campos Mena",
             "cargo": "Especialista en Gestión del Territorio",  
             "cardDetalle": "Contador Público Autorizado | Máster en Administración de Empresas con mención en Sostenibilidad de Sectores", 
             "info": "Profesional con experiencia en consultoría, planificación territorial y análisis espacial. Ha liderado proyectos de regularización de tierras, planes de desarrollo y sistemas de información geográfica (SIG). Su experiencia se centra en gestión de proyectos territoriales y urbanísticos, trabajando con municipalidades y organismos gubernamentales. Ha dirigido procesos de capacitación y asesoramiento en análisis espacial y manejo de datos geográficos." 
@@ -67,7 +67,7 @@ export var dataJSON = `{
             "equipo": "Externo",
             "tag": "ext",
             "image": "./assets/image/nst_7.webp",
-            "name": "DANIEL TOBALINA DITO",
+            "name": "Daniel Tobalina Dito",
             "cargo": "Especialista en Información Geográfica",  
             "cardDetalle": "Ingeniero Ambiental | Magíster en Tecnologías de la Información Geográfica", 
             "info": "Profesional con experiencia en gestión territorial y recursos naturales, con enfoque tecnológico en sectores público y privado. Experto en Procesamiento de Información Geográfica, Catastro Urbano y Ordenamiento Territorial. Ha trabajado en consultorías ambientales y actualmente se desempeña en el sector hídrico, promoviendo gestión sostenible del recurso hídrico." 

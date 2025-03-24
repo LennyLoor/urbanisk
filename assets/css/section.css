@@ -26,6 +26,7 @@ section {
 }
 
 .urb_home_content a {
+    font-size: var(--font-btn-home);
     text-align: center;
     transition: .5s;
 }
@@ -59,32 +60,67 @@ section {
         NOSOTROS
 -------------------------*/
 .urb_qs {
-    padding: var(--qs-pd-box);
     display: flex;
-    gap: 48px;
+    /*     padding: var(--qs-pd-box);
+    display: flex;
+    gap: 48px; */
 }
 
 .urb_qs-img {
-    position: absolute;
-    left: 0;
     width: 500px;
-    height: 100%;
+    height: 500px;
     background-image: var(--img-qs);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.urb_qs-img span {
+    background: var(--color-primary);
+    width: 80px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    opacity: .5;
+}
+
+.urb_qs-logo {
+    background: var(--color-primary);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%, -50%);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.urb_qs-logo img {
+    display: block;
+    margin: 0 auto;
 }
 
 .urb_qs-content {
+    width: calc(100% - 596px);
+    padding: 48px;
     display: flex;
     gap: 16px;
     flex-direction: column;
+    justify-content: center;
 }
 
 .urb_qs-content h2 {
     text-align: left;
 }
 
+.urb_qs-content button{
+    width: max-content;
+}
 /* ------------------------
         SERVICIOS
 -------------------------*/
@@ -175,7 +211,8 @@ section {
     gap: 8px;
     position: relative;
 }
-.overlay_nst{
+
+.overlay_nst {
     background-image: var(--img-overlay-nst);
     background-repeat: no-repeat;
     background-position: 50% 60%;
@@ -187,10 +224,12 @@ section {
     top: 0;
     opacity: .2;
 }
-.nst_title{
+
+.nst_title {
     z-index: 2;
 }
-.urb_nst_title .urb_title {
+
+.urb_nst_title h2 {
     color: var(--color-secundary-300);
 }
 
@@ -260,10 +299,12 @@ section {
 }
 
 .item_content {
+    gap: 24px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    justify-content: space-between;
 }
 
 .item_content-info {
@@ -274,21 +315,19 @@ section {
     text-align: center;
 }
 
-.item_content-info .info-name {
-    text-transform: uppercase;
-    text-align: center;
-}
 
 .item_content p {
     text-align: center;
 }
 
 .item_content-footer i {
-    color: var(--color-primary); 
+    color: var(--color-primary);
 }
-.item_content-footer a{
+
+.item_content-footer a {
     font-size: 1.5rem;
 }
+
 .item_content-footer {
     gap: 16px;
 }
@@ -305,10 +344,6 @@ section {
     transition: 0.5s;
     z-index: 100;
     overflow: hidden;
-}
-
-.nst_sidebar h2{
-    font-size: 1rem;
 }
 
 .nst_sidebar-content {
@@ -343,9 +378,14 @@ section {
     gap: 16px;
 }
 
+.content-info h3 {
+    overflow: auto;
+    color: var(--color-text-secundary);
+}
+
 .content-info p {
     overflow: auto;
-    color: var(--color-gray-400);
+    color: var(--color-text-secundary);
 }
 
 .info-footer {
@@ -365,7 +405,7 @@ section {
     font-size: 14px;
     line-height: 20px;
     border-radius: 4px;
-    padding: 8px 16px; 
+    padding: 8px 16px;
     background-color: var(--color-primary-50)
 }
 
@@ -448,6 +488,14 @@ section {
     margin: 0 auto;
     flex-direction: column;
 }
+
+/* .tab-proj-content {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.tab-proj-content.active {
+    opacity: 1;
+} */
 
 .exp-image {
     height: 250px;
@@ -610,7 +658,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     position: absolute;
     left: 0;
     top: 0;
@@ -635,6 +683,10 @@ section {
     align-items: flex-start;
     gap: 36px;
     z-index: 2;
+}
+
+.urb_cont-box h3 {
+    text-transform: uppercase;
 }
 
 .urb_cont p,

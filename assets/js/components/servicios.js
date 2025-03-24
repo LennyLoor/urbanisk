@@ -20,7 +20,7 @@ class cardServicios extends HTMLElement {
                             <h3>Detalles del servicio</h3> 
                         </div>
                         ${data_.beneficios}
-                         <button class="urb_btn btn-secundary center card-btn-footer" onclick="flipCard(this)"><i class="fa-solid fa-chevron-left"></i>Regresar</button>
+                         <button class="urb_btn btn-secundary center card-btn-footer" onclick="flipCard(this)"><i class="fa-solid fa-chevron-left"></i>Volver</button>
                     </div>
                 </div>`; 
         }).join('')

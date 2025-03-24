@@ -1,21 +1,53 @@
 
-/* SLIDER */
+/* LOADER PAGE */
+$('body').css({ overflow: 'hidden' });
+const loadPage = () => {
+  $(".urb_loader").fadeOut("slow", () => {
+    $('body').css({ overflow: 'auto' });
+  });
+}
+window.onload = loadPage;
+
+/* SCROLL UP */
+const scrollUp = document.querySelector('.urb_scrollUp');
+window.addEventListener('scroll', (e) => {
+  scrollValue = window.pageYOffset;
+  if (scrollValue <= 100) {
+    scrollUp.style.classList = "slideInUp";
+    scrollUp.style.display = "none";
+  } else {
+    scrollUp.style.display = "block";
+  }
+});
+
+scrollUp.addEventListener('click', () => {
+  $('html, body').animate({
+    scrollTop: 0,
+  }, 500);
+});
+
+/* PDF - VISUALIZACIÓN */
+function verPortafolio() {
+  window.open('assets/doc/PORTAFOLIO_URBANISTIK_2025.pdf', '_blank');
+}
+
+/* SLIDER - HOME */
 var slider = $('.urb_home_slider img');
 var currentIndex = 0;
 function nextImage() {
   var currentImg = $(slider[currentIndex]);
   var nextIndex = (currentIndex + 1) % slider.length;
   var nextImg = $(slider[nextIndex]);
-  // Aplica el efecto de zoom-out y fadeOut a la imagen actual
+
   currentImg.css({ transform: 'scale(1)' }).animate({ opacity: 0 }, 1000, function () {
-    $(this).css({ transform: 'scale(1.1)' }).hide(); // Ajuste para el próximo ciclo
+    $(this).css({ transform: 'scale(1.1)' }).hide();
   });
-  // Muestra la siguiente imagen con zoom-in y fadeIn
+
   nextImg.css({ transform: 'scale(1.1)', display: 'block', opacity: 0 })
     .animate({ transform: 'scale(1)', opacity: 1 }, 1000);
   currentIndex = nextIndex;
 }
-setInterval(nextImage, 3000);// Ejecutar cada 3 segundos
+setInterval(nextImage, 3000);// Ejecuta cada 3 segundos
 
 
 /* SERVICIOS */
@@ -32,42 +64,22 @@ function flipCard(element) {
 }
 
 /* TERMINOS Y CONDICIONES */
-// Obtener el modal
-var modal = document.getElementById("modal_tc");
-
-// Obtener el botón que abre el modal
-var btn = document.getElementById("abrirModal");
-
-// Obtener el <span> que cierra el modal
-var span = document.getElementById("cerrarModal");
-
-const checkbox_terminos = document.getElementById('terminos');
-const btn_form = document.getElementById("btn-form");
-
-checkbox_terminos.addEventListener('change', function () {
-  if (checkbox_terminos.checked) {
-    btn_form.classList.remove('btn-disabled'); // Eliminar clase 'disabled'
-    btn_form.classList.add('btn-primary');     // Agregar clase 'primary'
-  } else {
-    btn_form.classList.remove('btn-primary');  // Eliminar clase 'primary'
-    btn_form.classList.add('btn-disabled');    // Agregar clase 'disabled'
-  }
-});
-
-// Cuando el usuario haga clic en el enlace, abre el modal
+const modal = document.getElementById("modal_tc");
+const btn = document.getElementById("abrirModal");
+const span = document.getElementById("cerrarModal");
+ 
 btn.onclick = function () {
   modal.style.display = "block";
-  document.body.style.overflow = 'hidden';
-  btn_form.classList.add('ee')
+  document.body.style.overflow = 'hidden'; 
   event.preventDefault();  // Evita que el enlace haga scroll
 }
 
-// Cuando el usuario haga clic en <span> (x), cierra el modal
 span.onclick = function () {
   modal.style.display = "none";
   document.body.style.overflow = 'auto';
 }
-/*  */
+
+/* NAVBAR */
 document.querySelector(".menu-toggle").addEventListener("click", function () {
   const menu = document.querySelector(".urb_nav");
   if (menu.classList.contains("active")) {
@@ -95,7 +107,7 @@ document.querySelectorAll(".listItem").forEach(item => {
   });
 });
 
-/*  */
+/* SLIDER ALIANZAS */
 document.addEventListener("DOMContentLoaded", function () {
   const slider = document.getElementById("urb_ali-slider");
   const images = [

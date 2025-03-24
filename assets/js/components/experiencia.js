@@ -38,7 +38,7 @@ class listProjects extends HTMLElement {
                         <img width="300" src="${data_.image}" alt="${data_.name}">
                     </div>
                     <div class="exp-content">
-                        <h4>${data_.name}</h4>
+                        <b>${data_.name}</b>
                         ${data_.detalle}
                     </div>
                 </div>`;
@@ -51,15 +51,16 @@ window.customElements.define('list-proyectos', listProjects);
 // Manejo de pestañas
 document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('#projNavTab a');
-    const projContent = document.getElementById('projContent');
+    const projContent = document.getElementById('projContent'); 
 
     tabs.forEach(tab => {
         tab.addEventListener('click', function(e) {
             e.preventDefault();
 
             // Activar la pestaña seleccionada
-            tabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
+            tabs.forEach(t => t.classList.remove('active')); 
+
+            tab.classList.add('active'); 
 
             // Obtener el tipo de contenido de la pestaña y cargar los proyectos correspondientes
             const tabId = tab.getAttribute('data-tab');
@@ -67,3 +68,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+ 

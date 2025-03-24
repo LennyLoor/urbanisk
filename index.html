@@ -13,6 +13,17 @@
 </head>
 
 <body>
+    <!-- Loader  -->
+    <div class="urb_loader">
+        <div class="urb_loader-content">
+            <div class="urb_loader-circle"></div>
+            <div class="urb_loader-line-mask">
+                <div class="urb_loader-line"></div>
+            </div>
+            <img data-logo width="78" src="./assets/image/logo_urbanisk_blanco.webp">
+        </div>
+    </div> 
+    <!-- Header -->
     <header id="header-scroll">
         <div class="urb_nav-right">
             <img data-logo width="78" src="./assets/image/logo_urbanisk_blanco.webp">
@@ -41,6 +52,7 @@
             </ul>
         </nav>
     </header>
+    <!-- Content -->
     <main>
         <!-- Inicio -->
         <section id="inicio" class="urb_home center">
@@ -62,12 +74,17 @@
             <div class="overlay_slider"></div>
         </section>
         <!-- Quienes somos -->
-        <section id="nosotros" class="urb_qs center">
-            <div class="urb_qs-img no-select"></div>
+        <section id="nosotros" class="urb_qs">
+            <div class="urb_qs-img no-select">
+                <div class="urb_qs-logo center">
+                    <img width="150" src="./assets/image/logo_urbanisk_blanco.webp">
+                </div>
+                <span></span>
+            </div>
             <div class="urb_qs-content">
-                <div class="urb_box-title">
+                <div class="urb_title txt-left">
                     <h3>Sobre Nosotros</h3>
-                    <h2>¿Quiénes somos?</h2>
+                    <h2 class="clr-primary">¿Quiénes somos?</h2>
                 </div>
                 <p class="txt-secundary">Desde 2008, nos hemos consolidado como una empresa líder en consultoría y
                     gestión de proyectos, brindando soluciones integrales y personalizadas en planificación territorial,
@@ -75,30 +92,32 @@
                     políticas públicas y normativas. Nuestra amplia experiencia en el sector público y privado nos
                     permite abordar cada proyecto con un enfoque estratégico, garantizando eficiencia, innovación y
                     cumplimiento normativo en cada solución que ofrecemos.</p>
+                    <button class="urb_btn btn-primary no-select"  onclick="verPortafolio()">Ver portafolio <i class="fa-solid fa-up-right-from-square"></i></button>
+
             </div>
         </section>
         <!-- Servicios -->
-        <section id="servicios" class="p-section urb_serv bg-section">
-            <div class="urb_box-title al-center">
+        <section id="servicios" class="p-section urb_serv bg-section center">
+            <div class="urb_title al-center">
                 <h3>Nuestros Servicios</h3>
                 <h4> ¿Qué te ofrecemos? </h4>
-                <h2>Soluciones estratégicas para potenciar tu proyecto </h2>
+                <h2 class="clr-primary">Soluciones estratégicas para potenciar tu proyecto </h2>
             </div>
             <card-servicios class="urb_serv-content"></card-servicios>
         </section>
         <!-- Productos -->
         <section id="productos" class="section_prd p-section center">
-            <div class="urb_box-title al-center">
+            <div class="urb_title al-center">
                 <h3>Nuestros Productos</h3>
-                <h2>Impulsamos soluciones tecnológicas y sistemas de control remoto con el respaldo de softwares líderes
-                </h2>
+                <h2 class="clr-primary">Impulsamos soluciones tecnológicas y sistemas de control remoto con el respaldo
+                    de softwares líderes</h2>
             </div>
             <card-productos class="urb_box-prod"></card-productos>
         </section>
         <!-- Nuestro Equipo -->
         <section id="equipo" class="section_nst">
-            <div class="urb_box-title urb_nst_title">
-                <div class="nst_title">
+            <div class="urb_nst_title">
+                <div class="urb_title">
                     <h3>Nuestro Equipo</h3>
                     <h2 class="subtitle-secundary">Más que consultores, somo aliados estratégicos en cada proyecto</h2>
                     <p>La experiencia y especialización de nuestro equipo nos permite abordar cada proyecto con una
@@ -118,9 +137,9 @@
         </section>
         <!-- Experiencia -->
         <section id="experiencia" class="p-section bg-section">
-            <div class="txt-center">
+            <div class="urb_title">
                 <h3 class="urb_subtitle">Experiencia</h3>
-                <h2>Experiencia y calidad en cada proyecto</h2>
+                <h2 class="clr-primary">Experiencia y calidad en cada proyecto</h2>
             </div>
             <div class="urb_proj-content">
                 <div class="exp-navTab-proj center" id="projNavTab">
@@ -135,9 +154,9 @@
         <!-- Alianzas -->
         <section id="alianzas" class="urb_ali p-section">
             <span class="urb_ali-svgTop"></span>
-            <div class="txt-center">
+            <div class="urb_title">
                 <h3>Alianzas Estratégicas</h3>
-                <h2>Creciendo juntos para llegar más lejos</h2>
+                <h2 class="clr-primary">Creciendo juntos para llegar más lejos</h2>
             </div>
             <div class="urb_ali-images no-select">
                 <div class="slider-wrapper" id="urb_ali-slider"></div>
@@ -186,41 +205,67 @@
                     <h3>Hablemos de tu proyecto.</h3>
                     <P>Déjanos tus datos y te contactaremos pronto para analizar tus necesidades y desarrollar proyectos
                         juntos.</P>
-                    <form action="#" method="POST">
+                    <form action="./assets/php/enviar_msm.php" method="POST" name="formContacto">
+                        
+                        <!-- Error --> 
+                        <div class="urb_msm-error">
+                            <small class="center">Se ha producido un error inténtelo más tarde.</small>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div> 
+                        <!-- form-row -->
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="nombre">Nombre:</label>
-                                <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+                                <input type="text" id="nombre" name="nombre" data-tipo="nombre"
+                                    placeholder="Ingresa tu nombre" required>
+                                <span class="msm-error">Completar para enviar.</span>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" required
-                                    placeholder="Ingresa tu correo electrónico">
+                                <input type="email" id="email" name="email" data-tipo="email"
+                                    placeholder="Ingresa tu correo electrónico" required>
+                                <span class="msm-error">Completar para enviar.</span>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="mensaje">Mensaje:</label>
-                            <textarea id="mensaje" name="mensaje" required
-                                placeholder="Cuéntanos sobre tu proyecto, tus ideas o necesidades"></textarea>
+                            <textarea id="mensaje" name="mensaje" data-tipo="mensaje"
+                                placeholder="Cuéntanos sobre tu proyecto, tus ideas o necesidades" required></textarea>
+                            <span class="msm-error">Completar para enviar.</span>
                         </div>
 
                         <div class="checkbox-container no-select">
-                            <input type="checkbox" name="terminos" id="terminos" required>
+                            <input type="checkbox" name="terminos" id="terminos" data-tipo="terminos" required>
                             <label for="terminos">Al enviar el formulario asumimos su conformidad con nuestro
-                                <a href="#" id="abrirModal">aviso legal y nuestra
+                                <a id="abrirModal">aviso legal y nuestra
                                     política de privacidad.</a></label>
                         </div>
-                        <button type="submit" id="btn-form" class="urb_btn btn-disabled m-auto no-select">Enviar</button>
+                        <!-- buttons -->
+                        <button type="submit" id="urb_btn-form" class="urb_btn btn-primary m-auto no-select" disabled>Enviar</button>
+                         <!-- Cargando -->
+                         <span class="urb_btn urb_btn-load">
+                            <div class="btn_flex">
+                                <div class="loader"></div>
+                                 Enviando mensaje..... 
+                            </div>
+                        </span>
+                        <!-- Confirmación -->
+                        <span class="urb_btn urb_btn-confirm">
+                             Menaje enviado correctamente 
+                            <i class="fa-solid fa-check"></i>
+                        </span>
                     </form>
                 </div>
             </div>
         </section>
+        <!-- ScrollUp -->
+       <div class="urb_scrollUp">
+           <a><i class="fa-solid fa-chevron-up"></i></a>
+       </div>
         <section class="urb_copy">
             © 2025 Desarrollado por Lenny Loor
         </section>
-    </main>
-    <a class="btn-scrollTop"></a>
+    </main> 
 
     <!-- Modal -->
     <div id="modal_tc" class="modal">

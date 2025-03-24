@@ -15,8 +15,8 @@ class cardNosotrosEP extends HTMLElement {
                     <img width="182" height="182" src="${data_.image}" class="no-select">
                     <div class="item_content">
                         <div class="item_content-info">
-                            <h3>${data_.name}</h3>
-                             ${data_.cargo} 
+                            <b>${data_.name}</b>
+                            <p class="txt-secundary"> ${data_.cargo} </p>
                         </div>
                         <div class="item_content-footer center">
                             <a href="${data_.linkedIn}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>

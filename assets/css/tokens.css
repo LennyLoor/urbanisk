@@ -2,7 +2,6 @@
 
 :root {
 
-    --font: "Lato", sans-serif;
     /* Color */
     --color-secundary: var(--color-secundary-500);
     --color-primary: var(--color-primary-500);
@@ -10,6 +9,7 @@
     --color-text: var(--color-gray-900);
     --color-text-secundary: var(--color-gray-500);
     --color-white: #ffffff;
+    --bg-success: #336d3d;
 
     --btn-disabled: var(--color-gray-200);
     --txt-disabled: var(--color-gray-700);
@@ -52,6 +52,7 @@
     --bg-primary-gradient-360g: linear-gradient(356deg, var(--color-primary-900) 0%, var(--color-primary-500) 100%);
 
     --color-white-opacity-50: rgb(255 255 255 / 70%);
+    
     /* Size */
     --size-3xl: 3rem;
     --size-2xl: 2.5rem;
@@ -72,34 +73,98 @@
     --pd-box-sm: 100px 100px;
 
     --qs-size-image: 600px;
-    --qs-pd-box: 100px 100px 100px 570px; 
+    --qs-pd-box: 100px 100px 100px 100px; 
     
 
     --pd-input: 8px 12px;
 
     /* Font */
-    --font-body: 1rem; 
+    --font: "Lato", sans-serif;
 
-    --font-title: 36px;
-    --font-subtitle: 1.2rem;
-    --font-btn-large: 1rem;
-    --font-list-ico: .5rem;
+    --font-body: 1rem;
+    --font-lh-body: 1.5rem;
 
-    --font-h2: 1.5rem;
-    --font-h3: 1rem;
-    --font-small: .85rem;
+    --font-h1: 2rem;
+    --font-lh-h1: 2.5rem;
 
-    --font-btn: 1rem;
-    --font-btn-icon: 11.2px;
-    --font-list-style: .8rem;
+    --font-subtitle-home: 1.2rem;
+    --font-lh-subtitle-home: 2rem;
+
+    --font-btn-home: 1.15rem;
+
+    --font-h2: 1.3rem;
+    --font-lh-h2: 1.9rem!important;
+
+    --font-h3: .9rem;
+    --font-lh-h3: 1.2rem;
+
+    --font-h4: .8rem;
+    --font-lh-h4: 1.3rem;
+
+    --font-card-list: .7rem;
+    --font-lh-card-list: 1.2rem;
+
+
+  
+    --font-list-ico: .5rem; 
+
+    --font-btn: 1rem;  
 
     /* Image */
     --img-qs: url(./../image/qs.webp);
+    --img-qs-logo: url(../image/logo_urbanisk_blanco.webp);
     --img-overlay-contact: url(./../image/overlay_contact.webp);
     --img-bg-O4B: url(./../image/producto_1.webp);
     --img-bg-kantan: url(./../image/producto_2.webp);
     --img-overlay-nst: url(../image/overlay_nst.webp);
 
+}
+
+@media only screen and (max-width: 436px) {
+    :root {
+        --font-h1: 1.5rem;
+        --font-lh-h1: 2rem;
+
+        --font-subtitle-home: 1rem;
+        --font-lh-subtitle-home: 1.5rem;
+        --font-btn-home: 1rem;
+
+        --font-card-list: .8rem;
+        --font-lh-card-list: 1.2rem;
+
+        --width-prod: 100%;
+
+    }
+
+}
+@media (min-width: 1400px) {
+    :root {
+        --font-body: 1.125rem;
+        --font-lh-body: 1.7rem;
+
+        --font-h1: 2rem;
+        --font-lh-h1: 2.5rem;
+
+        --font-subtitle-home: 1.5rem;
+        --font-lh-subtitle-home: 2rem;
+        --font-btn-home:  1.2rem;
+
+        --font-card-list: .96rem;
+        --font-lh-card-list: 1.4rem;
+
+        --font-h2: 1.5rem;
+        --font-lh-h2: 1.9rem!important;
+    
+        --font-h3: 1.05rem;
+        --font-lh-h3: 1.5rem;
+    
+        --font-h4: .96rem;
+        --font-lh-h4: 1.3rem;
+
+        --width-prod: 100%;
+
+
+    }
 }
 /* 
 @media only screen and (max-width: 1200px) {

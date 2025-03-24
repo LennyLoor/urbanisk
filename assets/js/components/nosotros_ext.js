@@ -14,7 +14,7 @@ class cardNosotrosEXT extends HTMLElement {
                         <div class="item_content">
                             <div class="item_content-info">
                                 <b class="info-name">${data_.name}</b>
-                                 ${data_.cargo} 
+                                <p class="txt-secundary"> ${data_.cargo} </p>
                             </div>
                             <div class="item_content-footer center"> 
                                 <button class="urb_btn btn-secundary center no-select btn-ver-mas-ext" data-id="${data_.id}">

@@ -14,50 +14,64 @@ body {
     width: 100%;
     color: var(--color-text);
     font-size: var(--font-body);
-    line-height: 1.4rem;
+    line-height: var(--font-lh-body);
 }
 
+/* Font */
 h1 {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: var(--font-h1);
+    line-height: var(--font-lh-h1);
     text-align: center;
 }
 
 h2 {
-    font-size: 1.3rem;
-    line-height: 2rem;
+    font-size: var(--font-h2);
+    line-height: var(--font-lh-h2);
     text-align: center;
 }
 
 h3 {
-    font-size: .9rem;
-    line-height: 1rem;
+    font-size: var(--font-h3);
+    line-height: var(--font-lh-h3);
     font-weight: 700;
+}
+
+h4 {
+    font-size: var(--font-h4);
+    line-height: var(--font-lh-h4);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.clr-primary {
+    color: var(--color-primary);
 }
 
 .txt-secundary {
     color: var(--color-text-secundary);
 }
 
-.urb_box-title {
-    gap: 4px;
+.urb_title {
+    gap: 10px;
     display: flex;
     flex-direction: column;
-} 
+    text-align: center;
+    z-index: 2;
+}
+
+.urb_title h3 {
+    text-transform: uppercase;
+}
 
 .urb_home-subtitle {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: var(--font-subtitle-home);
+    line-height: var(--font-lh-subtitle-home);
     opacity: .8;
     font-weight: 300;
 }
 
 .subtitle-secundary {
     color: var(--color-secundary-300);
-}
-
-.urb_home_content a {
-    /*   font-size: var(--font-btn-large); */
 }
 
 
@@ -116,6 +130,7 @@ main {
 
 .urb_nav-listItem-contacto a {
     color: var(--color-text) !important;
+    padding: 0.25rem 1rem;
 }
 
 .nav_active {
@@ -125,7 +140,7 @@ main {
 /* -----------------------------
             BUTTON 
 ------------------------------*/
-.urb_btn{
+.urb_btn {
     display: flex;
     padding: 0.5rem 1rem;
     justify-content: center;
@@ -138,25 +153,24 @@ main {
 
 .btn-primary {
     background: var(--color-primary);
-    /*  font-size: var(--font-btn); */
     color: var(--color-white);
 }
-.btn-disabled { 
-    background: var(--btn-disabled); 
-    color: var(--txt-disabled); 
+
+button:disabled {
+    background: var(--btn-disabled);
+    color: var(--txt-disabled);
     cursor: not-allowed;
 }
 
-.btn-secundary { 
-    border: 1px solid var(--color-primary); 
+.btn-secundary {
+    border: 1px solid var(--color-primary);
     background-color: white;
     font-style: normal;
     font-weight: 400;
-    color: var(--color-primary); 
+    color: var(--color-primary);
 }
 
 .btn-secundary i {
-    /*  font-size: var(--font-btn-icon); */
     line-height: var(--font-btn);
 }
 
@@ -188,7 +202,6 @@ main {
 .serv_card-front {
     width: auto;
     height: 430px;
-    cursor: pointer;
     display: flex;
     padding: 1.5rem 2.5rem;
     flex-direction: column;
@@ -222,7 +235,7 @@ main {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: .8rem;
 }
 
 .card_back-header {
@@ -237,18 +250,20 @@ main {
 }
 
 .serv_card-back ul {
+    width: calc(100% - 16px);
     margin: 0;
-    padding: 0 0 0 24px;
-    font-size: 12px;
-    line-height: 18px;
+    padding: 0 0 0 16px;
+    font-size: var(--font-card-list);
+    line-height: var(--font-lh-card-list);
     font-weight: 300;
-    width: 95%;
 }
-.card-btn-footer{
+
+.card-btn-footer {
     position: absolute;
     bottom: 24px;
     width: calc(100% - 48px);
 }
+
 /* -----------------------------
             LIST 
 ------------------------------*/
@@ -325,15 +340,16 @@ main {
 .modal-header i {
     font-size: 1.5rem;
     color: var(--color-primary);
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-.modal-body { 
+.modal-body {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-.modal-body ul { 
+
+.modal-body ul {
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -379,6 +395,16 @@ label {
     margin-bottom: 5px;
 }
 
+form span {
+    font-size: small;
+    font-weight: 400;
+    color: #c96d7e;
+}
+
+.msm-error {
+    display: none;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -419,9 +445,45 @@ form button {
     width: 100%;
 }
 
+/* FORM - BUTTONS */
+
+.urb_btn-load {
+    background-color: var(--color-secundary);
+    color: var(--color-text); 
+    display: none;
+}
+
+.urb_btn-load small {
+    margin-left: .5rem;
+}
+
+.urb_btn-confirm {
+    background-color: var(--bg-success);
+    color: var(--bg-white); 
+     display: none;
+}
+
+.urb_btn-confirm small {
+    margin-right: .5rem;
+}
+
+.urb_msm-error{
+    display: none;
+    justify-content: space-between;
+    gap: 12px;
+    background: #e9838338;
+    padding: 12px;
+    border-radius: 4px;
+    align-items: center;
+}
 /* -----------------------------
             CHECK 
 ------------------------------*/
+.checkbox-container {
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
 
 .checkbox-container a {
     color: var(--color-primary-300);
@@ -448,7 +510,7 @@ form button {
     content: '';
     position: absolute;
     left: 0;
-    top: 4px;
+    top: 0;
     width: 20px;
     height: 20px;
     border-radius: 4px;
@@ -465,8 +527,41 @@ form button {
     content: '\2713';
     position: absolute;
     left: 5px;
-    top: 5px;
+    top: 2px;
     color: white;
+}
+
+/* -----------------------------
+        SCROOLUP BUTTON
+------------------------------*/
+.urb_scrollUp {
+    display: none;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--bg-white);
+    line-height: 2rem;
+    padding: .5rem;
+    transition: 1S;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.urb_scrollUp a {
+    background: var(--color-secundary);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-white);
 }
 
 
@@ -541,20 +636,6 @@ h5 {
     margin: 0;
 }
 
-h2 {
-    /* font-size: var(--font-h2); */
-    color: var(--color-primary);
-}
-
-h3 {
-    /*  font-size: var(--font-h3); */
-    text-transform: uppercase;
-}
-
-.tag {
-    /*  font-size: var(--font-small); */
-}
-
 p {
     margin: 0;
 }
@@ -563,6 +644,96 @@ p {
     text-align: center;
 }
 
-a>i {
-    /*  font-size: 1.5rem; */
+.txt-left {
+    text-align: left;
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.serv_card-back ::selection {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+/* LOADING PAGE */
+.urb_loader {
+    background: var(--bg-primary-gradient-360g);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    position: fixed;
+}
+
+.urb_loader-circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    margin-left: -60px;
+    margin-top: -60px;
+}
+
+.urb_loader-line-mask {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60px;
+    height: 120px;
+    margin-left: -60px;
+    margin-top: -60px;
+    overflow: hidden;
+    transform-origin: 60px 60px; 
+    animation: rotate 1.2s infinite linear;
+}
+
+.urb_loader img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+}
+
+.urb_loader-line-mask .urb_loader-line {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.25;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
