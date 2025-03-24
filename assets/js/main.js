@@ -69,7 +69,7 @@ const btn = document.getElementById("abrirModal");
 const span = document.getElementById("cerrarModal");
  
 btn.onclick = function () {
-  modal.style.display = "block";
+  modal.style.display = "flex";
   document.body.style.overflow = 'hidden'; 
   event.preventDefault();  // Evita que el enlace haga scroll
 }
