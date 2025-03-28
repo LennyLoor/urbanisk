@@ -135,3 +135,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   populateSlider();
 });
+
+/* CALL BUTTON */
+document.addEventListener("DOMContentLoaded", function () {
+  const callButton = document.getElementById("urb_call-button");
+
+  // Media query para detectar pantallas menores a 768px (móviles)
+  const mediaQuery = window.matchMedia("(max-width: 436px)");
+
+  function handleMediaChange(e) {
+      if (e.matches) {
+          callButton.setAttribute("href", "tel:0988872797");
+      } else {
+          callButton.removeAttribute("href"); 
+      }
+  }
+
+  mediaQuery.addEventListener("change", handleMediaChange);
+  handleMediaChange(mediaQuery);
+});

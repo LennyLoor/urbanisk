@@ -21,7 +21,7 @@ class cardNosotrosEP extends HTMLElement {
                         <div class="item_content-footer center">
                             <a href="${data_.linkedIn}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                             <button class="urb_btn btn-secundary center no-select btn-ver-mas" data-id="${data_.id}">
-                                Ver más <i class="fa-solid fa-external-link-alt"></i>
+                                Ver más <i class="fa-solid fa-angle-right"></i>
                             </button>
                         </div>
                     </div>

@@ -52,7 +52,7 @@
     --bg-primary-gradient-360g: linear-gradient(356deg, var(--color-primary-900) 0%, var(--color-primary-500) 100%);
 
     --color-white-opacity-50: rgb(255 255 255 / 70%);
-    
+
     /* Size */
     --size-3xl: 3rem;
     --size-2xl: 2.5rem;
@@ -69,14 +69,14 @@
     --pd-tb-box-sm: 70px;
     --pd-tb-box-md: 100px;
     --pd-lr-box-md: 100px;
-    
+
     --pd-box-sm: 100px 100px;
 
     --qs-size-image: 600px;
-    --qs-pd-box: 100px 100px 100px 100px; 
-    
+    --qs-pd-box: 100px 100px 100px 100px;
 
-    --pd-input: 8px 12px;
+
+    --pd-input: 12px;
 
     /* Font */
     --font: "Lato", sans-serif;
@@ -93,7 +93,7 @@
     --font-btn-home: 1.15rem;
 
     --font-h2: 1.3rem;
-    --font-lh-h2: 1.9rem!important;
+    --font-lh-h2: 1.9rem !important;
 
     --font-h3: .9rem;
     --font-lh-h3: 1.2rem;
@@ -105,10 +105,10 @@
     --font-lh-card-list: 1.2rem;
 
 
-  
-    --font-list-ico: .5rem; 
 
-    --font-btn: 1rem;  
+    --font-list-ico: .5rem;
+
+    --font-btn: 1rem;
 
     /* Image */
     --img-qs: url(./../image/qs.webp);
@@ -120,23 +120,45 @@
 
 }
 
+@media (min-width: 436px) and (max-width: 1024px) {
+    :root {
+
+        --pd-lr-box-md: 20px;
+        --pd-box-sm: 100px 50px;
+    }
+
+}
+
 @media only screen and (max-width: 436px) {
     :root {
-        --font-h1: 1.5rem;
-        --font-lh-h1: 2rem;
+        --font-h1: 24px;
+        --font-lh-h1: 32px;
 
-        --font-subtitle-home: 1rem;
-        --font-lh-subtitle-home: 1.5rem;
-        --font-btn-home: 1rem;
+        --font-h2: 20.8px;
+        --font-lh-h2: 25.6px !important;
 
-        --font-card-list: .8rem;
-        --font-lh-card-list: 1.2rem;
+        --font-subtitle-home: 16px;
+        --font-lh-subtitle-home: 24px;
+        --font-btn-home: 16px;
+
+        --font-card-list: 12.8px;
+        --font-lh-card-list: 19.2px;
 
         --width-prod: 100%;
 
     }
 
 }
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    :root {
+
+        --font-card-list: .8rem;
+        --font-lh-card-list: 1.35rem;
+
+    }
+}
+
 @media (min-width: 1400px) {
     :root {
         --font-body: 1.125rem;
@@ -147,17 +169,17 @@
 
         --font-subtitle-home: 1.5rem;
         --font-lh-subtitle-home: 2rem;
-        --font-btn-home:  1.2rem;
+        --font-btn-home: 1.2rem;
 
         --font-card-list: .96rem;
         --font-lh-card-list: 1.4rem;
 
         --font-h2: 1.5rem;
-        --font-lh-h2: 1.9rem!important;
-    
+        --font-lh-h2: 1.9rem !important;
+
         --font-h3: 1.05rem;
         --font-lh-h3: 1.5rem;
-    
+
         --font-h4: .96rem;
         --font-lh-h4: 1.3rem;
 
@@ -166,29 +188,3 @@
 
     }
 }
-/* 
-@media only screen and (max-width: 1200px) {
-
-    :root{
-        --pd-lr-box-md: 50px;
-    }
-}
-@media only screen and (max-width: 436px) {
-    :root {
-        --pd-tb-box-sm: 50px;
-        --pd-tb-box-md: 70px;
-        --pd-lr-box-md: 24px;
-        --pd-box-sm: 0px; 
-    }
-
-}
-
-@media (min-width: 1400px) {
-    :root {
-        --pd-box-sm: 70px 136px; 
-        --pd-tb-box-sm: 70px;
-        --pd-tb-box-md: 100px;
-        --pd-lr-box-md: 136px;
-
-    }
-} */

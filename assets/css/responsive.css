@@ -1,5 +1,95 @@
 /* Small devices (landscape phones, 436px and up) */
-@media only screen and (max-width: 436px) {
+@media (min-width: 599px) and (max-width: 1024px) {
+
+    .urb_qs-content p {
+        text-align: left !important;
+    }
+
+    .urb_cont-box {
+        gap: 24px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .urb_cont-1 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .urb_cont-detalle {
+        width: 100%;
+        align-items: center;
+    }
+
+    .urb_cont-2 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .urb_cont-3 {
+        width: 100%;
+    }
+
+    .urb_cont-3 h3,
+    p {
+        text-align: center;
+    }
+
+    .of-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .checkbox-container label {
+        line-height: 1.2rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .urb_serv-content {
+        width: 100%;
+    }
+
+    .exp_card {
+        width: 100%;
+    }
+
+    .urb_box-prod {
+        width: 100%;
+    }
+
+    .urb_qs-img {
+        width: 50vw;
+    }
+
+    .urb_ali-images {
+        width: 100%;
+    }
+
+    .urb_qs-logo {
+        transform: translate(2%, -50%);
+    }
+
+    .nst_card-content {
+        width: auto;
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex: 1 0;
+        padding: 0 24px;
+    }
+
+    .nst_card-item {
+        flex: 1;
+    }
+}
+
+/* Small devices (landscape phones, 436px and up) */
+@media only screen and (max-width: 599px) {
     header {
         width: 100%;
         padding: 0;
@@ -12,6 +102,21 @@
     h1,
     p {
         text-align: center !important;
+    }
+
+    .urb_copy {
+        gap: 4px !important;
+    }
+
+    button {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        font-family: var(--font);
+    }
+
+    button i {
+        font-size: .8rem;
+        line-height: 1rem !important;
     }
 
     .urb_nav-right {
@@ -79,9 +184,13 @@
         padding: 48px 24px !important;
     }
 
+    .urb_home {
+        height: calc(100vh - 63px);
+    }
+
     .urb_home_content {
         width: 100%;
-        gap: 24px;
+        gap: 16px;
     }
 
     .urb_nav-list {
@@ -376,7 +485,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 32px;
+        width: 40px;
         height: 20px;
         cursor: pointer;
         position: relative;
@@ -476,7 +585,7 @@
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) and (max-width: 1400px) {}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
@@ -498,8 +607,8 @@
 
     .urb_ali-images {
         width: 70vw;
-    } 
-    
+    }
+
     .urb_qs-logo {
         top: 50%;
         left: 72%;

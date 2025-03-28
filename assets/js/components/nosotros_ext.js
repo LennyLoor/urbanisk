@@ -18,7 +18,7 @@ class cardNosotrosEXT extends HTMLElement {
                             </div>
                             <div class="item_content-footer center"> 
                                 <button class="urb_btn btn-secundary center no-select btn-ver-mas-ext" data-id="${data_.id}">
-                                    Ver más <i class="fa-solid fa-external-link-alt"></i>
+                                    Ver más <i class="fa-solid fa-angle-right"></i>
                                 </button>
                             </div>
                         </div>
